@@ -5,10 +5,21 @@
   height: 50px;
 }
 
+.brand-container {
+  flex-grow: 3;
+}
+
 .brand {
   font-size: 30px;
   margin-left: 80px;
   flex-grow: 3;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .unorderedlist {
@@ -25,16 +36,11 @@
 
 .listitem {
   flex-grow: 1;
-  font-size: 18px;
-}
-
-.unorderedlist a,
-.unorderedlist a::after {
   text-decoration: none;
   color: inherit;
 }
 
-.unorderedlist a:hover {
+.listitem:hover {
   text-decoration: none;
   color: yellowgreen;
 }
