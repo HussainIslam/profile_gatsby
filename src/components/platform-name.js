@@ -7,7 +7,13 @@ import PNStyles from "./platform-name.module.css"
 const PlatformName = () => (
   <div className={PNStyles.mainContainer}>
     <Topic>I develop for</Topic>
-    <div className={PNStyles.platformContainer}>
+    <div
+      className={PNStyles.platformContainer}
+      data-sal="fade"
+      data-sal-duration="2000"
+      data-sal-delay="100"
+      data-sal-easing="ease"
+    >
       <div className={PNStyles.platformTitle}>Web</div>
       <div className={PNStyles.platformDescription}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -18,7 +24,13 @@ const PlatformName = () => (
         porttitor felis.
       </div>
     </div>
-    <div className={PNStyles.platformContainer}>
+    <div
+      className={PNStyles.platformContainer}
+      data-sal="fade"
+      data-sal-duration="2000"
+      data-sal-delay="400"
+      data-sal-easing="ease"
+    >
       <div className={PNStyles.platformTitle}>Mobile</div>
       <div className={PNStyles.platformDescription}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -28,7 +40,13 @@ const PlatformName = () => (
         volutpat ac nunc.
       </div>
     </div>
-    <div className={PNStyles.platformContainer}>
+    <div
+      className={PNStyles.platformContainer}
+      data-sal="fade"
+      data-sal-duration="2000"
+      data-sal-delay="800"
+      data-sal-easing="ease"
+    >
       <div className={PNStyles.platformTitle}>Desktop</div>
       <div className={PNStyles.platformDescription}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -43,7 +61,13 @@ const PlatformName = () => (
     <Topic align={"flex-end"}>
       <span className={PNStyles.myNameTopic}>I am </span>
     </Topic>
-    <div className={PNStyles.platformContainer}>
+    <div
+      className={PNStyles.platformContainer}
+      data-sal="fade"
+      data-sal-duration="2000"
+      data-sal-delay="800"
+      data-sal-easing="ease"
+    >
       <div className={PNStyles.platformDescription}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
         euismod metus nec justo ullamcorper, ultricies posuere enim feugiat.
