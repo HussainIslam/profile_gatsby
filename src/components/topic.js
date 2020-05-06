@@ -1,11 +1,15 @@
 import React from "react"
 
-const Topic = ({ children }) => (
+const Topic = ({ align, children }) => (
   <div
     style={{
       fontFamily: `'Noto Sans JP', sans-serif;`,
       color: `black`,
       fontSize: `1.5em`,
+      width: `100%`,
+      display: `flex`,
+      justifyContent: align,
+      fontWeight: `bolder`,
     }}
   >
     {children}

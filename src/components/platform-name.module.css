@@ -1,17 +1,22 @@
 .main-container {
   width: 90%;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .platform-container {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .platform-title {
   font-size: 7em;
-  margin-right: 20px;
+  margin: 0px 20px 0px 0px;
+  padding: 0px;
   background-color: white;
   color: #cac6c6;
+  font-weight: bold;
 }
 
 .platform-description {
@@ -19,4 +24,21 @@
   text-align: justify;
   background-color: #cac6c6;
   color: white;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.my-name {
+  font-size: 7em;
+  margin-left: 20px;
+  background-color: white;
+  color: #000;
+  font-weight: bolder;
+  align-self: flex-end;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.my-name-topic {
+  margin-top: 50px;
 }
