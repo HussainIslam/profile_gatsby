@@ -1,0 +1,40 @@
+.container {
+  background-color: #4a8b50;
+  color: white;
+  display: flex;
+  height: 50px;
+}
+
+.brand {
+  font-size: 30px;
+  margin-left: 80px;
+  flex-grow: 3;
+}
+
+.unorderedlist {
+  list-style: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  flex-grow: 1;
+  align-self: flex-end;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listitem {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+.unorderedlist a,
+.unorderedlist a::after {
+  text-decoration: none;
+  color: inherit;
+}
+
+.unorderedlist a:hover {
+  text-decoration: none;
+  color: yellowgreen;
+}
