@@ -2,10 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-const About = () => (
+const Blog = () => (
   <Layout>
-    <h2>This is about page</h2>
+    <h2>This is blog page</h2>
   </Layout>
 )
 
-export default About
+export default Blog

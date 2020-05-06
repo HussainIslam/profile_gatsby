@@ -2,10 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-const About = () => (
+const Portfolio = () => (
   <Layout>
-    <h2>This is about page</h2>
+    <h2>This is portfolio page</h2>
   </Layout>
 )
 
-export default About
+export default Portfolio
