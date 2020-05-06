@@ -7,7 +7,7 @@ import navbarStyles from "./navbar.module.css"
 const NavBar = () => (
   <div className={navbarStyles.container}>
     <div className={navbarStyles.brandContainer}>
-      <Link to="/" className={navbarStyles.brand}>
+      <Link className={navbarStyles.brand} to="/">
         I am Hussain
       </Link>
     </div>
