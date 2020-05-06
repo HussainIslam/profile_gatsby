@@ -3,6 +3,8 @@
   color: white;
   display: flex;
   height: 50px;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 50px;
 }
 
 .brand-container {

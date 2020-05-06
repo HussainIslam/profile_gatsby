@@ -1,0 +1,22 @@
+.main-container {
+  width: 90%;
+}
+
+.platform-container {
+  display: flex;
+  align-items: center;
+}
+
+.platform-title {
+  font-size: 7em;
+  margin-right: 20px;
+  background-color: white;
+  color: #cac6c6;
+}
+
+.platform-description {
+  font-size: 1em;
+  text-align: justify;
+  background-color: #cac6c6;
+  color: white;
+}
