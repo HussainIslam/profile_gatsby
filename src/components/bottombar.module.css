@@ -1,3 +1,37 @@
 .main-container {
   background-color: #4a8b50;
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 250px;
+}
+
+.brand {
+  flex-grow: 2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media,
+.links-main-container,
+.only-links-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: yellowgreen;
+}
+
+.header {
+  font-size: large;
 }

@@ -1,34 +1,54 @@
 import React from "react"
 
+import { Link } from "gatsby"
+
 import BB from "./bottombar.module.css"
 
 const BottomBar = () => (
   <div className={BB.mainContainer}>
-    <div>Hussain</div>
-    <ul>
-      <li>github</li>
-      <li>linkedin</li>
-      <li>facebook</li>
-      <li>youtube</li>
-    </ul>
-    <div>
-      <h2>Quick Links</h2>
-      <ul>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Resume</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </ul>
+    <div className={BB.brand}>HUSSAIN</div>
+    <div className={BB.socialMedia}>
+      <Link className={BB.link}>github</Link>
+      <Link className={BB.link}>linkedin</Link>
+      <Link className={BB.link}>facebook</Link>
+      <Link className={BB.link}>youtube</Link>
     </div>
-    <div>
-      <h2>Useful Links</h2>
-      <ul>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 4</li>
-      </ul>
+    <div className={BB.linksMainContainer}>
+      <div className={BB.header}>Quick Links</div>
+      <div className={BB.onlyLinksContainer}>
+        <Link className={BB.link} to="/about/">
+          About
+        </Link>
+        <Link className={BB.link} to="/portfolio/">
+          Portfolio
+        </Link>
+        <Link className={BB.link} to="/resume/">
+          Resume
+        </Link>
+        <Link className={BB.link} to="/blog/">
+          Blog
+        </Link>
+        <Link className={BB.link} to="/contact/">
+          Contact
+        </Link>
+      </div>
+    </div>
+    <div className={BB.linksMainContainer}>
+      <div className={BB.header}>Useful Links</div>
+      <div className={BB.onlyLinksContainer}>
+        <Link className={BB.link} to="#">
+          Link 1
+        </Link>
+        <Link className={BB.link} to="#">
+          Link 2
+        </Link>
+        <Link className={BB.link} to="#">
+          Link 3
+        </Link>
+        <Link className={BB.link} to="#">
+          Link 4
+        </Link>
+      </div>
     </div>
   </div>
 )
