@@ -1,6 +1,6 @@
 import React from "react"
 
-import { useTechIcons } from "../hooks/all-hooks"
+import { useTechIcons } from "../hooks/use-tech-icons"
 import TI from "./tech-icons.module.css"
 
 import Topic from "./topic"
@@ -13,7 +13,6 @@ const TechIcons = () => {
       <div className={TI.iconContainer}>
         {data.map((item, index) => {
           const titleName = item.node.name.substring(5, item.node.name.length)
-          console.log(titleName)
           return (
             <div key={item.node.id} className={TI.iconDiv}>
               <img
