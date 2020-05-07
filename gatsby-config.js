@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -41,8 +41,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-        threshold: 0.7,
-        once: false,
+        threshold: 0.5,
+        once: true,
       },
     },
     {

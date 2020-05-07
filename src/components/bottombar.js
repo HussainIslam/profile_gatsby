@@ -8,10 +8,18 @@ const BottomBar = () => (
   <div className={BB.mainContainer}>
     <div className={BB.brand}>HUSSAIN</div>
     <div className={BB.socialMedia}>
-      <Link className={BB.link}>github</Link>
-      <Link className={BB.link}>linkedin</Link>
-      <Link className={BB.link}>facebook</Link>
-      <Link className={BB.link}>youtube</Link>
+      <a className={BB.link} href="https://github.com">
+        github
+      </a>
+      <a className={BB.link} href="https://linkedin.com">
+        linkedin
+      </a>
+      <a className={BB.link} href="https://facebook.com">
+        facebook
+      </a>
+      <a className={BB.link} href="https://youtube.com">
+        youtube
+      </a>
     </div>
     <div className={BB.linksMainContainer}>
       <div className={BB.header}>Quick Links</div>
@@ -36,18 +44,18 @@ const BottomBar = () => (
     <div className={BB.linksMainContainer}>
       <div className={BB.header}>Useful Links</div>
       <div className={BB.onlyLinksContainer}>
-        <Link className={BB.link} to="#">
+        <a className={BB.link} href="https://google.com">
           Link 1
-        </Link>
-        <Link className={BB.link} to="#">
+        </a>
+        <a className={BB.link} href="https://google.com">
           Link 2
-        </Link>
-        <Link className={BB.link} to="#">
+        </a>
+        <a className={BB.link} href="https://google.com">
           Link 3
-        </Link>
-        <Link className={BB.link} to="#">
+        </a>
+        <a className={BB.link} href="https://google.com">
           Link 4
-        </Link>
+        </a>
       </div>
     </div>
   </div>

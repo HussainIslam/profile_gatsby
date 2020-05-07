@@ -55,9 +55,6 @@ const PlatformName = () => (
         cursus ac consequat purus.
       </div>
     </div>
-    <br />
-    <br />
-    <br />
     <Topic align={"flex-end"}>
       <span className={PNStyles.myNameTopic}>I am </span>
     </Topic>
