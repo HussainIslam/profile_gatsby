@@ -1,0 +1,25 @@
+.page-heading {
+}
+
+.page-subheading {
+  font-size: 0.8em;
+}
+
+.blog-container {
+  margin-bottom: 50px;
+}
+
+.blog-links,
+.blog-links:hover,
+.blog-links:after {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-title {
+  font-size: 1.5em;
+}
+
+.blog-post-date {
+  font-size: 0.8em;
+}

@@ -4,16 +4,22 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
+import BlogStyle from "./page-css/blog.module.css"
+
 const Blog = ({ data }) => (
   <Layout>
     <h2>My Blog Posts</h2>
-    <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+    <h4 className={BlogStyle.pageSubheading}>
+      Post Count: {data.allMarkdownRemark.totalCount}
+    </h4>
+    <hr />
     {data.allMarkdownRemark.edges.map(({ node }) => (
-      <div key={node.id}>
-        <Link to={node.fields.slug}>
-          <h3>
-            {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
-          </h3>
+      <div key={node.id} className={BlogStyle.blogContainer}>
+        <Link to={node.fields.slug} className={BlogStyle.blogLinks}>
+          <h3 className={BlogStyle.blogTitle}>{node.frontmatter.title}</h3>{" "}
+          <h4 className={BlogStyle.blogPostDate}>
+            Posted: {node.frontmatter.date}
+          </h4>
           <p>{node.excerpt}</p>
         </Link>
       </div>
