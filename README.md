@@ -10,6 +10,12 @@
 
 I am building my personal profile website for professional purpose 😎. To build this application, I am using [Gatsby](https://www.gatsbyjs.org).
 
+<h3 align="center">
+  🚀🚀🚀
+  <a href="http://iamhussain.ca">LIVE WEBSITE</a>
+  🚀🚀🚀
+</h3>
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
@@ -51,11 +57,3 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 💫 Application Deployed
-
-Check out my deployed site: [I am Hussain](http://www.iamhussain.ca)
-
-## Live Preview
-
-<iframe src="http://www.iamhussain.ca" height="300" width="500" style="border:none"> </iframe>
