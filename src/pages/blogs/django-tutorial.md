@@ -3,6 +3,8 @@ title: "Django Tutorial"
 date: "2020-05-06"
 ---
 
+Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+
 ### Virtual Environment
 
 To work with any Django or Python project, we may want to create a virtual environment first. This will create a virtual working environment for that particular project, which will help us control the versions of our dependencies that are specific to our project. In short this will create a container to host our dependencies and project.
@@ -543,7 +545,7 @@ There are some Jinja syntaxes that would be handy for loading and displaying dyn
 
 - To work with numbers and format them, we can use a package that comes with django, called `humanize`. To use this we need to add `django.contrib.humanize` to `INSTALLED_APP` under `settings.py` file. Then we need to load `humanize` using Jinja syntax. Then we can use humanize methods in our templates like: `{{ listing.price | intcomma }}`.
 
-## References:
+### References:
 
 1. [Virtual Environment](https://docs.python.org/3/tutorial/venv.html)
 2. [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
@@ -556,7 +558,7 @@ There are some Jinja syntaxes that would be handy for loading and displaying dyn
 9. [CSRF Token](https://docs.djangoproject.com/en/3.0/ref/csrf/)
 10. [Django Messages](https://docs.djangoproject.com/en/3.0/ref/contrib/messages/)
 
-## VSCode Extensions:
+### VSCode Extensions:
 
 1. Python Extension Pack
    1. MagicPython

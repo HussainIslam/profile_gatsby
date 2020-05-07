@@ -20,6 +20,12 @@ export default function BlogPost({ data }) {
         <hr />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
+      <div className={BP.blogTableOfContents}>
+        <h1 className={BP.blogTableOfContentsHeading}>Table of Contents</h1>
+        <hr />
+        <div dangerouslySetInnerHTML={{ __html: post.tableOfContents }} />
+        <hr />
+      </div>
     </Layout>
   )
 }
@@ -37,6 +43,7 @@ export const query = graphql`
         title
         date(formatString: "DD MMM Y")
       }
+      tableOfContents
     }
   }
 `

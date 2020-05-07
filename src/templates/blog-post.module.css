@@ -9,3 +9,38 @@
 .blog-heading-metadata {
   font-size: 0.8em;
 }
+
+.blog-table-of-contents {
+  font-size: 0.8em;
+  width: 12%;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  right: 10px;
+  overflow-x: hidden;
+}
+
+.blog-table-of-contents-heading {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.blog-table-of-contents ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.blog-table-of-contents li > a {
+  text-decoration: none;
+  color: gray;
+  overflow: hidden;
+}
+
+.blog-table-of-contents li > a:hover {
+  color: black;
+}
+
+.blog-table-of-contents li > ul,
+.blog-table-of-contents li > p {
+  display: none;
+}
