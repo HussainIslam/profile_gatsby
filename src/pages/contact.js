@@ -12,10 +12,6 @@ const Contact = () => (
       method="post"
       className={ConStyle.formContainer}
     >
-      <label>
-        Email
-        <input type="email" name="_replyto" />
-      </label>
       <div className={ConStyle.inputDiv}>
         <label htmlFor="fullname" className={ConStyle.inputLabel}>
           Full Name:{" "}
@@ -35,7 +31,7 @@ const Contact = () => (
         </label>
         <input
           type="email"
-          name="email"
+          name="_replyto"
           id="email"
           placeholder="enter your email"
           className={ConStyle.inputField}
