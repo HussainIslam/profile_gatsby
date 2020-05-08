@@ -284,7 +284,7 @@ _Note: The model name is singular._
 
 An example of a model is:
 
-```py
+```python{numberLines: 0}
 class Listing( models.Model ):
     realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=200)

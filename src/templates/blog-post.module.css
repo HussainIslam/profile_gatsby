@@ -10,12 +10,38 @@
   font-size: 0.8em;
 }
 
+.blog-body h1 {
+  font-size: 1.8em;
+}
+
+.blog-body h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.blog-body h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.blog-body h4 {
+  font-size: 1.2em;
+}
+
+.blog-body h5 {
+  font-size: 1.2em;
+}
+
+.blog-body h6 {
+  font-size: 1.1em;
+}
+
 .blog-table-of-contents {
   font-size: 0.8em;
   width: 12%;
   position: fixed;
   z-index: 1;
-  top: 100px;
+  top: 60px;
   right: 10px;
   overflow-x: hidden;
 }
@@ -30,17 +56,21 @@
   padding-left: 0;
 }
 
-.blog-table-of-contents li > a {
+.blog-table-of-contents li > a,
+.blog-table-of-contents ul > li > p > a {
   text-decoration: none;
   color: gray;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .blog-table-of-contents li > a:hover {
   color: black;
 }
 
-.blog-table-of-contents li > ul,
-.blog-table-of-contents li > p {
+.blog-table-of-contents li > ul {
   display: none;
+}
+
+.blog-table-of-contents p {
+  margin-bottom: 0;
 }

@@ -18,7 +18,10 @@ export default function BlogPost({ data }) {
           Word Count: {post.wordCount.words}
         </h2>
         <hr />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          className={BP.blogBody}
+        />
       </div>
       <div className={BP.blogTableOfContents}>
         <h1 className={BP.blogTableOfContentsHeading}>Table of Contents</h1>
