@@ -17,6 +17,7 @@ class NavBar extends Component {
 
   render() {
     return (
+      /* Main Container */
       <div className={navbarStyles.container}>
         <div className={navbarStyles.brandContainer}>
           <Link
@@ -66,14 +67,14 @@ class NavBar extends Component {
             </button>
           </div>
           <div
-            className={`${
+            className={`${navbarStyles.listItemContainer} ${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
-            } ${navbarStyles.listItemContainer}`}
+            }`}
           >
             <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
-              }  ${navbarStyles.listitem}`}
+              }  ${navbarStyles.listItem}`}
               to="/"
             >
               Home
@@ -87,7 +88,7 @@ class NavBar extends Component {
             <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
-              }  ${navbarStyles.listitem}`}
+              }  ${navbarStyles.listItem}`}
               to="/about/"
             >
               About
@@ -101,7 +102,7 @@ class NavBar extends Component {
             <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.listitem}`}
+              } ${navbarStyles.listItem}`}
               to="/portfolio/"
             >
               Portfolio
@@ -115,7 +116,7 @@ class NavBar extends Component {
             <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.listitem}`}
+              } ${navbarStyles.listItem}`}
               to="/resume/"
             >
               Resume
@@ -129,7 +130,7 @@ class NavBar extends Component {
             <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.listitem}`}
+              } ${navbarStyles.listItem}`}
               to="/blog/"
             >
               Blog
@@ -143,7 +144,7 @@ class NavBar extends Component {
             <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.listitem}`}
+              } ${navbarStyles.listItem}`}
               to="/contact/"
             >
               Contact
