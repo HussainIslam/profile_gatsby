@@ -12,9 +12,7 @@ class NavBar extends Component {
   }
 
   handleDisplayClick = event => {
-    this.setState({ isMenuOpen: !this.state.isMenuOpen }, () =>
-      console.log(this.state.isMenuOpen)
-    )
+    this.setState({ isMenuOpen: !this.state.isMenuOpen })
   }
 
   render() {
@@ -66,6 +64,20 @@ class NavBar extends Component {
             >
               &#8904;
             </button>
+          </div>
+          <div
+            className={`${
+              this.state.isMenuOpen ? null : navbarStyles.hideElement
+            } ${navbarStyles.listItemContainer}`}
+          >
+            <Link
+              className={`${
+                this.state.isMenuOpen ? null : navbarStyles.hideElement
+              }  ${navbarStyles.listitem}`}
+              to="/"
+            >
+              Home
+            </Link>
           </div>
           <div
             className={`${

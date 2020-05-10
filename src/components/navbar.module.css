@@ -80,7 +80,8 @@
 
   .modified-links {
     composes: links;
-    height: 80%;
+    height: 100%;
+    z-index: 100;
   }
 
   .display-button-container {

@@ -17,29 +17,20 @@ class About extends Component {
   }
 
   handleWho = target => {
-    this.setState({ whoAmIOpen: !this.state.whoAmIOpen }, () =>
-      console.log(target)
-    )
+    this.setState({ whoAmIOpen: !this.state.whoAmIOpen })
   }
+
   handleWhereWas = target => {
-    this.setState({ whereWasIOpen: !this.state.whereWasIOpen }, () =>
-      console.log(target)
-    )
+    this.setState({ whereWasIOpen: !this.state.whereWasIOpen })
   }
   handleIntrigues = target => {
-    this.setState({ intriguesOpen: !this.state.intriguesOpen }, () =>
-      console.log(target)
-    )
+    this.setState({ intriguesOpen: !this.state.intriguesOpen })
   }
   handleDrives = target => {
-    this.setState({ drivesOpen: !this.state.drivesOpen }, () =>
-      console.log(target)
-    )
+    this.setState({ drivesOpen: !this.state.drivesOpen })
   }
   handleHeading = target => {
-    this.setState({ headingOpen: !this.state.headingOpen }, () =>
-      console.log(target)
-    )
+    this.setState({ headingOpen: !this.state.headingOpen })
   }
 
   render() {

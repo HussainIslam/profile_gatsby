@@ -1,3 +1,7 @@
+html {
+  overflow-y: overlay;
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif;
 }
