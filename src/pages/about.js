@@ -40,8 +40,11 @@ class About extends Component {
         <div className={AboutStyle.mainContainer}>
           <div className={AboutStyle.sectionContainer}>
             <div
+              tabIndex="0"
+              role="button"
               className={AboutStyle.sectionHeaderContainer}
               onClick={this.handleWho}
+              onKeyDown={this.handleWho}
             >
               <h2 className={AboutStyle.sectionHeader}>Who am I?</h2>
               <span className={AboutStyle.openButton}>
@@ -70,8 +73,11 @@ class About extends Component {
           </div>
           <div className={AboutStyle.sectionContainer}>
             <div
+              tabIndex="-1"
+              role="button"
               className={AboutStyle.sectionHeaderContainer}
               onClick={this.handleWhereWas}
+              onKeyDown={this.handleWhereWas}
             >
               <h2 className={AboutStyle.sectionHeader}>Where was I?</h2>
               <span className={AboutStyle.openButton}>
@@ -100,8 +106,11 @@ class About extends Component {
           </div>
           <div className={AboutStyle.sectionContainer}>
             <div
+              tabIndex="-2"
+              role="button"
               className={AboutStyle.sectionHeaderContainer}
               onClick={this.handleIntrigues}
+              onKeyDown={this.handleIntrigues}
             >
               <h2 className={AboutStyle.sectionHeader}>What intrigues me?</h2>
               <span className={AboutStyle.openButton}>
@@ -130,8 +139,11 @@ class About extends Component {
           </div>
           <div className={AboutStyle.sectionContainer}>
             <div
+              tabIndex="-3"
+              role="button"
               className={AboutStyle.sectionHeaderContainer}
               onClick={this.handleDrives}
+              onKeyDown={this.handleDrives}
             >
               <h2 className={AboutStyle.sectionHeader}>What drives me?</h2>
               <span className={AboutStyle.openButton}>
@@ -160,8 +172,11 @@ class About extends Component {
           </div>
           <div className={AboutStyle.sectionContainer}>
             <div
+              tabIndex="-4"
+              role="button"
               className={AboutStyle.sectionHeaderContainer}
               onClick={this.handleHeading}
+              onKeyDown={this.handleHeading}
             >
               <h2 className={AboutStyle.sectionHeader}>Where am I heading?</h2>
               <span className={AboutStyle.openButton}>
