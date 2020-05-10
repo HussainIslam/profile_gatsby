@@ -9,6 +9,7 @@
 
 .brand-container {
   flex-grow: 3;
+  height: 100%;
 }
 
 .brand {
@@ -54,13 +55,13 @@
 @media screen and (max-width: 800px) {
   .container {
     width: 100%;
-    height: 30px;
     margin-left: 0px;
     align-items: center;
   }
 
   .brand-container {
     flex: 2;
+    margin-top: 25px;
   }
 
   .brand {
@@ -71,11 +72,12 @@
   .links {
     position: absolute;
     width: 100%;
-    height: 5%;
+    height: 50px;
     z-index: 1;
-    flex-direction: column;
     top: 0;
     left: 0;
+    flex-direction: column;
+    margin-top: 15px;
   }
 
   .modified-links {
