@@ -42,3 +42,18 @@
 .my-name-topic {
   margin-top: 50px;
 }
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    width: 95%;
+  }
+
+  .platform-title,
+  .my-name {
+    font-size: 22vw;
+  }
+
+  .platform-description {
+    display: none;
+  }
+}

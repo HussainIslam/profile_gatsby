@@ -10,7 +10,7 @@ const Topic = ({ align, children }) => (
       display: `flex`,
       justifyContent: align,
       fontWeight: `bolder`,
-      marginTop: `100px`,
+      marginTop: `50px`,
     }}
   >
     {children}
