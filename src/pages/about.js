@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 import AboutStyle from "./page-css/about.module.css"
 
@@ -36,6 +37,7 @@ class About extends Component {
   render() {
     return (
       <Layout>
+        <SEO title="About" />
         <h1>About</h1>
         <div className={AboutStyle.mainContainer}>
           <div className={AboutStyle.sectionContainer}>

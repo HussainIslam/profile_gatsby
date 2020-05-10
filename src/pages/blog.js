@@ -3,11 +3,13 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 import BlogStyle from "./page-css/blog.module.css"
 
 const Blog = ({ data }) => (
   <Layout>
+    <SEO title="Blog" />
     <h2>My Blog Posts</h2>
     <h4 className={BlogStyle.pageSubheading}>
       Post Count: {data.allMarkdownRemark.totalCount}

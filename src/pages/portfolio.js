@@ -3,6 +3,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Placeholder from "../images/portfolio_images/portfolio_realtor.png"
 
 import PortStyle from "./page-css/portfolio.module.css"
@@ -11,6 +12,7 @@ const Portfolio = ({ data }) => {
   console.log(data.allPortfolioCsv.nodes)
   return (
     <Layout>
+      <SEO title="Portfolio" />
       <h2>My Works</h2>
       <br />
       <br />

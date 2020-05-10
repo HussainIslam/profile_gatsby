@@ -1,11 +1,13 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 import ConStyle from "./page-css/contact.module.css"
 
 const Contact = () => (
   <Layout>
+    <SEO title="Contact" />
     <h2>Send me a shoutout</h2>
     <form
       action="https://formspree.io/mbjzjngd"
