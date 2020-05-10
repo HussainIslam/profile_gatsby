@@ -2,11 +2,13 @@
 }
 
 .section-container {
+  margin-top: 40px;
 }
 
 .section-header-container {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .section-header {
@@ -21,4 +23,12 @@
 
 .open-button:hover {
   cursor: pointer;
+}
+
+.hide-element {
+  display: none;
+}
+
+.show-element {
+  display: block;
 }
