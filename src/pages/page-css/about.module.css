@@ -1,0 +1,24 @@
+.main-container {
+}
+
+.section-container {
+}
+
+.section-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-header {
+}
+
+.open-button {
+}
+
+.section-text {
+  text-align: justify;
+}
+
+.open-button:hover {
+  cursor: pointer;
+}
