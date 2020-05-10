@@ -74,17 +74,18 @@
 
   .links {
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 50px;
-    z-index: 1;
     top: 0;
-    left: 0;
+    left: 50%;
     flex-direction: column;
   }
 
   .modified-links {
     composes: links;
     height: 100%;
+    width: 100%;
+    left: 0;
     z-index: 100;
   }
 
