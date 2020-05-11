@@ -1,0 +1,30 @@
+.resume-container {
+  display: flex;
+  border: 1px solid red;
+}
+
+.summary-container {
+  border: 1px solid red;
+}
+
+.detail-resume-container {
+  border: 1px solid red;
+}
+
+.image-container {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.resume-image {
+  border-radius: 50%;
+  height: 200px;
+}
+
+.summary-info-container {
+}
+
+.profile-highlights {
+  width: 100%;
+}
