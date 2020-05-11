@@ -9,7 +9,6 @@ import ResumeStyle from "./page-css/resume.module.css"
 const Resume = () => (
   <Layout>
     <SEO title="Resume" />
-    <h2>This is resume page</h2>
     <div className={ResumeStyle.resumeContainer}>
       <div className={ResumeStyle.summaryContainer}>
         <div className={ResumeStyle.fixedContainer}>
@@ -76,81 +75,94 @@ const Resume = () => (
         </div>
         <div className={ResumeStyle.sectionContainer}>
           <div className={ResumeStyle.sectionHeader}>Work Experience</div>
-          <div className={ResumeStyle.experience}>
-            <div className={ResumeStyle.experiencePosition}>Peer Tutor</div>
-            <div className={ResumeStyle.experienceOrganization}>
-              Seneca College
+          <div className={ResumeStyle.experiencesContainer}>
+            <div className={ResumeStyle.experience}>
+              <div className={ResumeStyle.experienceContainer}>
+                <div className={ResumeStyle.experiencePosition}>Peer Tutor</div>
+                <div className={ResumeStyle.experienceOrganization}>
+                  Seneca College
+                </div>
+                <div className={ResumeStyle.experienceTenure}>
+                  Jan 2020 - Present
+                </div>
+                <div className={ResumeStyle.experienceResponsibilities}>
+                  <ul className={ResumeStyle.listOfResponsibilities}>
+                    <li className={ResumeStyle.responsibility}>
+                      Helping peer students understand difficult course concepts
+                      through one-on-one sessions{" "}
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className={ResumeStyle.experienceTenure}>
-              Jan 2020 - Present
-            </div>
-            <div className={ResumeStyle.experienceResponsibilities}>
-              <ul className={ResumeStyle.listOfResponsibilities}>
-                <li className={ResumeStyle.responsibility}>
-                  Helping peer students understand difficult course concepts
-                  through one-on-one sessions{" "}
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          <div className={ResumeStyle.experience}>
-            <div className={ResumeStyle.experiencePosition}>
-              Quality Assurance Intern
+            <div className={ResumeStyle.experience}>
+              <div className={ResumeStyle.experienceContainer}>
+                <div className={ResumeStyle.experiencePosition}>
+                  Quality Assurance Intern
+                </div>
+                <div className={ResumeStyle.experienceOrganization}>
+                  Q4 Inc.
+                </div>
+                <div className={ResumeStyle.experienceTenure}>
+                  Sep 2019 - Nov 2019
+                </div>
+                <div className={ResumeStyle.experienceResponsibilities}>
+                  <ul className={ResumeStyle.listOfResponsibilities}>
+                    <li className={ResumeStyle.responsibility}>
+                      Manually test internally built web application
+                    </li>
+                    <li className={ResumeStyle.responsibility}>
+                      Write automation scripts that automate testing of stable
+                      feature{" "}
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className={ResumeStyle.experienceOrganization}>Q4 Inc.</div>
-            <div className={ResumeStyle.experienceTenure}>
-              Sep 2019 - Nov 2019
-            </div>
-            <div className={ResumeStyle.experienceResponsibilities}>
-              <ul className={ResumeStyle.listOfResponsibilities}>
-                <li className={ResumeStyle.responsibility}>
-                  Manually test internally built web application
-                </li>
-                <li className={ResumeStyle.responsibility}>
-                  Write automation scripts that automate testing of stable
-                  feature{" "}
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          <div className={ResumeStyle.experience}>
-            <div className={ResumeStyle.experiencePosition}>Peer Tutor</div>
-            <div className={ResumeStyle.experienceOrganization}>
-              Seneca College
+            <div className={ResumeStyle.experience}>
+              <div className={ResumeStyle.experienceContainer}>
+                <div className={ResumeStyle.experiencePosition}>Peer Tutor</div>
+                <div className={ResumeStyle.experienceOrganization}>
+                  Seneca College
+                </div>
+                <div className={ResumeStyle.experienceTenure}>
+                  May 2019 - Sep 2019
+                </div>
+                <div className={ResumeStyle.experienceResponsibilities}>
+                  <ul className={ResumeStyle.listOfResponsibilities}>
+                    <li className={ResumeStyle.responsibility}>
+                      Helping peer students understand difficult course concepts
+                      through one-on-one sessions{" "}
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className={ResumeStyle.experienceTenure}>
-              May 2019 - Sep 2019
-            </div>
-            <div className={ResumeStyle.experienceResponsibilities}>
-              <ul className={ResumeStyle.listOfResponsibilities}>
-                <li className={ResumeStyle.responsibility}>
-                  Helping peer students understand difficult course concepts
-                  through one-on-one sessions{" "}
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          <div className={ResumeStyle.experience}>
-            <div className={ResumeStyle.experiencePosition}>
-              Technical Support Agent
-            </div>
-            <div className={ResumeStyle.experienceOrganization}>
-              Teleperformance
-            </div>
-            <div className={ResumeStyle.experienceTenure}>
-              Sep 2017 - Apr 2018
-            </div>
-            <div className={ResumeStyle.experienceResponsibilities}>
-              <ul className={ResumeStyle.listOfResponsibilities}>
-                <li className={ResumeStyle.responsibility}>
-                  Solved customers’ network problems by understanding the issue,
-                  asking probing questions for detailed information, identifying
-                  the key issues, and responded with proper resolution.
-                </li>
-              </ul>
+            <div className={ResumeStyle.experience}>
+              <div className={ResumeStyle.experienceContainer}>
+                <div className={ResumeStyle.experiencePosition}>
+                  Technical Support Agent
+                </div>
+                <div className={ResumeStyle.experienceOrganization}>
+                  Teleperformance
+                </div>
+                <div className={ResumeStyle.experienceTenure}>
+                  Sep 2017 - Apr 2018
+                </div>
+                <div className={ResumeStyle.experienceResponsibilities}>
+                  <ul className={ResumeStyle.listOfResponsibilities}>
+                    <li className={ResumeStyle.responsibility}>
+                      Solved customers’ network problems by understanding the
+                      issue, asking probing questions for detailed information,
+                      identifying the key issues, and responded with proper
+                      resolution.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
