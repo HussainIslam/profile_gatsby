@@ -1,11 +1,11 @@
 .resume-container {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: #4a8b50;
 }
 
 .summary-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: #4a8b50;
   color: white;
   width: 30%;
@@ -13,10 +13,11 @@
 }
 
 .detail-resume-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: white;
   width: 70%;
   min-width: 530px;
+  padding-left: 20px;
 }
 
 .fixed-container {
@@ -31,15 +32,18 @@
 
 .image-container {
   border-radius: 50px;
+  margin-bottom: 20px;
 }
 
 .resume-image {
   border-radius: 50%;
   height: 200px;
+  box-shadow: 0 0 15px 5px #2a612d;
 }
 
 .summary-info-container {
   text-align: center;
+  text-shadow: 0 0 10px black;
 }
 
 .my-name {
