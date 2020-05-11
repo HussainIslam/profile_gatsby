@@ -63,8 +63,7 @@ const Resume = () => (
               <div className={ResumeStyle.degreeInstitute}>Seneca College</div>
               <div className={ResumeStyle.degreeYear}>2018 - 2020</div>
               <div className={ResumeStyle.degreeAward}>
-                President's Honor List for <br /> Aug' 18, Dec' 18, Apr' 19,
-                Aug'19
+                President's Honor List for Aug' 18, Dec' 18, Apr' 19, Aug'19
               </div>
             </div>
             <div className={ResumeStyle.degree}>
