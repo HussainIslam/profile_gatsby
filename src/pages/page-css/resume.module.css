@@ -2,6 +2,7 @@
   display: flex;
   /* border: 1px solid red; */
   background-color: #4a8b50;
+  font-size: 0.9em;
 }
 
 .summary-container {
@@ -47,8 +48,9 @@
 }
 
 .my-name {
-  font-size: 1.3em;
   font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
 }
 
 .my-address {
@@ -68,7 +70,7 @@
 }
 
 .section-container {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .section-container:first-child {
@@ -78,6 +80,9 @@
 .section-header {
   font-weight: bold;
   text-align: center;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .highlight-list {
@@ -86,13 +91,27 @@
 .highlight-list-item {
 }
 
+.degrees-container {
+  display: flex;
+}
+
+.degree {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
 .degree-name {
+  font-weight: bold;
 }
 
 .degree-institute {
 }
 
 .degree-year {
+  background-color: #4a8b50;
+  color: white;
+  width: fit-content;
+  opacity: 0.5;
 }
 
 .degree-award {
@@ -144,7 +163,7 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: #4a8b50;
+  background-color: white;
   border: 4px solid #ff9f55;
   top: 15px;
   left: 3%;
@@ -161,12 +180,19 @@
 }
 
 .experience-position {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .experience-organization {
+  font-style: italic;
 }
 
 .experience-tenure {
+  background-color: #4a8b50;
+  opacity: 0.6;
+  color: white;
+  width: fit-content;
 }
 
 .experience-responsibilities {

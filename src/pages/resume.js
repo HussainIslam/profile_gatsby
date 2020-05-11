@@ -57,20 +57,23 @@ const Resume = () => (
         </div>
         <div className={ResumeStyle.sectionContainer}>
           <div className={ResumeStyle.sectionHeader}>Education</div>
-          <div className={ResumeStyle.degree}>
-            <div className={ResumeStyle.degreeName}>Computer Programmer</div>
-            <div className={ResumeStyle.degreeInstitute}>Seneca College</div>
-            <div className={ResumeStyle.degreeYear}>2018 - 2020</div>
-            <div className={ResumeStyle.degreeAward}>
-              President's Honor List for Aug' 18, Dec' 18, Apr' 19, Aug'19
+          <div className={ResumeStyle.degreesContainer}>
+            <div className={ResumeStyle.degree}>
+              <div className={ResumeStyle.degreeName}>Computer Programmer</div>
+              <div className={ResumeStyle.degreeInstitute}>Seneca College</div>
+              <div className={ResumeStyle.degreeYear}>2018 - 2020</div>
+              <div className={ResumeStyle.degreeAward}>
+                President's Honor List for <br /> Aug' 18, Dec' 18, Apr' 19,
+                Aug'19
+              </div>
             </div>
-          </div>
-          <div className={ResumeStyle.degree}>
-            <div className={ResumeStyle.degreeName}>MBA</div>
-            <div className={ResumeStyle.degreeInstitute}>
-              University of Dhaka
+            <div className={ResumeStyle.degree}>
+              <div className={ResumeStyle.degreeName}>MBA</div>
+              <div className={ResumeStyle.degreeInstitute}>
+                University of Dhaka
+              </div>
+              <div className={ResumeStyle.degreeYear}>2011 - 2013</div>
             </div>
-            <div className={ResumeStyle.degreeYear}>2011 - 2013</div>
           </div>
         </div>
         <div className={ResumeStyle.sectionContainer}>
