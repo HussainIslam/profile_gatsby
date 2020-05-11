@@ -5,25 +5,32 @@
 }
 
 .summary-container {
-  position: fixed;
-  width: 21%;
   border: 1px solid red;
   background-color: #4a8b50;
   color: white;
+  width: 30%;
+  min-width: 285px;
 }
 
 .detail-resume-container {
-  position: relative;
   border: 1px solid red;
-  width: 70%;
-  left: 30%;
   background-color: white;
+  width: 70%;
+  min-width: 530px;
+}
+
+.fixed-container {
+  position: fixed;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .image-container {
   border-radius: 50px;
-  display: flex;
-  justify-content: center;
 }
 
 .resume-image {
@@ -56,20 +63,23 @@
   width: 100%;
 }
 
-.highlight-container {
+.section-container {
+  margin-top: 100px;
+}
+
+.section-container:first-child {
+  margin-top: 50px;
 }
 
 .section-header {
   font-weight: bold;
+  text-align: center;
 }
 
 .highlight-list {
 }
 
 .highlight-list-item {
-}
-
-.educaton-container {
 }
 
 .degree-name {
@@ -82,9 +92,6 @@
 }
 
 .degree-award {
-}
-
-.experience-container {
 }
 
 .experience {

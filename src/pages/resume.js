@@ -12,25 +12,29 @@ const Resume = () => (
     <h2>This is resume page</h2>
     <div className={ResumeStyle.resumeContainer}>
       <div className={ResumeStyle.summaryContainer}>
-        <div className={ResumeStyle.imageContainer}>
-          <img
-            src={Hussain}
-            alt="hussain resume"
-            className={ResumeStyle.resumeImage}
-          />
-        </div>
-        <div className={ResumeStyle.summaryInfoContainer}>
-          <div className={ResumeStyle.myName}>Md. Hussainul Islam Sajib</div>
-          <div className={ResumeStyle.myAddress}>
-            30 Denton Avenue, Toronto, ON
+        <div className={ResumeStyle.fixedContainer}>
+          <div className={ResumeStyle.imageContainer}>
+            <img
+              src={Hussain}
+              alt="hussain resume"
+              className={ResumeStyle.resumeImage}
+            />
           </div>
-          <div className={ResumeStyle.myEmail}>m.hussainul.islam@gmail.com</div>
-          <div className={ResumeStyle.myPhone}>(416) 627 9414</div>
-          <div className={ResumeStyle.mySocialContainer}></div>
+          <div className={ResumeStyle.summaryInfoContainer}>
+            <div className={ResumeStyle.myName}>Md. Hussainul Islam Sajib</div>
+            <div className={ResumeStyle.myAddress}>
+              30 Denton Avenue, Toronto, ON
+            </div>
+            <div className={ResumeStyle.myEmail}>
+              m.hussainul.islam@gmail.com
+            </div>
+            <div className={ResumeStyle.myPhone}>(416) 627 9414</div>
+            <div className={ResumeStyle.mySocialContainer}></div>
+          </div>
         </div>
       </div>
       <div className={ResumeStyle.detailResumeContainer}>
-        <div className={ResumeStyle.profileHighlights}>
+        <div className={ResumeStyle.sectionContainer}>
           <div className={ResumeStyle.sectionHeader}>Profile Hightlights</div>
           <div className={ResumeStyle.highlightContainer}>
             <ul className={ResumeStyle.highlightList}>
@@ -52,7 +56,7 @@ const Resume = () => (
             </ul>
           </div>
         </div>
-        <div className={ResumeStyle.educationContainer}>
+        <div className={ResumeStyle.sectionContainer}>
           <div className={ResumeStyle.sectionHeader}>Education</div>
           <div className={ResumeStyle.degree}>
             <div className={ResumeStyle.degreeName}>Computer Programmer</div>
@@ -70,7 +74,7 @@ const Resume = () => (
             <div className={ResumeStyle.degreeYear}>2011 - 2013</div>
           </div>
         </div>
-        <div className={ResumeStyle.experienceContainer}>
+        <div className={ResumeStyle.sectionContainer}>
           <div className={ResumeStyle.sectionHeader}>Work Experience</div>
           <div className={ResumeStyle.experience}>
             <div className={ResumeStyle.experiencePosition}>Peer Tutor</div>
@@ -81,7 +85,7 @@ const Resume = () => (
               Jan 2020 - Present
             </div>
             <div className={ResumeStyle.experienceResponsibilities}>
-              <ul clasName={ResumeStyle.listOfResponsibilities}>
+              <ul className={ResumeStyle.listOfResponsibilities}>
                 <li className={ResumeStyle.responsibility}>
                   Helping peer students understand difficult course concepts
                   through one-on-one sessions{" "}
@@ -99,7 +103,7 @@ const Resume = () => (
               Sep 2019 - Nov 2019
             </div>
             <div className={ResumeStyle.experienceResponsibilities}>
-              <ul clasName={ResumeStyle.listOfResponsibilities}>
+              <ul className={ResumeStyle.listOfResponsibilities}>
                 <li className={ResumeStyle.responsibility}>
                   Manually test internally built web application
                 </li>
@@ -120,7 +124,7 @@ const Resume = () => (
               May 2019 - Sep 2019
             </div>
             <div className={ResumeStyle.experienceResponsibilities}>
-              <ul clasName={ResumeStyle.listOfResponsibilities}>
+              <ul className={ResumeStyle.listOfResponsibilities}>
                 <li className={ResumeStyle.responsibility}>
                   Helping peer students understand difficult course concepts
                   through one-on-one sessions{" "}
@@ -140,7 +144,7 @@ const Resume = () => (
               Sep 2017 - Apr 2018
             </div>
             <div className={ResumeStyle.experienceResponsibilities}>
-              <ul clasName={ResumeStyle.listOfResponsibilities}>
+              <ul className={ResumeStyle.listOfResponsibilities}>
                 <li className={ResumeStyle.responsibility}>
                   Solved customers’ network problems by understanding the issue,
                   asking probing questions for detailed information, identifying
@@ -150,7 +154,7 @@ const Resume = () => (
             </div>
           </div>
         </div>
-        <div className={ResumeStyle.volunteerContainer}>
+        <div className={ResumeStyle.sectionContainer}>
           <div className={ResumeStyle.sectionHeader}>
             Volunteering Experience
           </div>
@@ -165,7 +169,7 @@ const Resume = () => (
               May 2019 - Present
             </div>
             <div className={ResumeStyle.volunteerResponsibilities}>
-              <ul clasName={ResumeStyle.listOfResponsibilities}>
+              <ul className={ResumeStyle.listOfResponsibilities}>
                 <li className={ResumeStyle.responsibility}>
                   Helping new students transition into college by providing
                   information and support
