@@ -1,14 +1,23 @@
 .resume-container {
   display: flex;
   border: 1px solid red;
+  background-color: #4a8b50;
 }
 
 .summary-container {
+  position: fixed;
+  width: 21%;
   border: 1px solid red;
+  background-color: #4a8b50;
+  color: white;
 }
 
 .detail-resume-container {
+  position: relative;
   border: 1px solid red;
+  width: 70%;
+  left: 30%;
+  background-color: white;
 }
 
 .image-container {
@@ -23,8 +32,92 @@
 }
 
 .summary-info-container {
+  text-align: center;
+}
+
+.my-name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.my-address {
+}
+
+.my-email {
+}
+
+.my-phone {
+}
+
+.my-social-container {
 }
 
 .profile-highlights {
   width: 100%;
+}
+
+.highlight-container {
+}
+
+.section-header {
+  font-weight: bold;
+}
+
+.highlight-list {
+}
+
+.highlight-list-item {
+}
+
+.educaton-container {
+}
+
+.degree-name {
+}
+
+.degree-institute {
+}
+
+.degree-year {
+}
+
+.degree-award {
+}
+
+.experience-container {
+}
+
+.experience {
+}
+
+.experience-position {
+}
+
+.experience-organization {
+}
+
+.experience-tenure {
+}
+
+.experience-responsibilities {
+}
+
+.list-of-responsibilities {
+}
+
+.responsibility {
+}
+
+.volunteer {
+}
+
+.volunteerPosition {
+}
+
+.volunteer-organization {
+}
+
+.volunteer-tenure {
+}
+.volunteer-responsibilities {
 }
