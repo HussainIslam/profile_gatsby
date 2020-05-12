@@ -12,7 +12,13 @@ export default function BlogPost({ data }) {
   return (
     <Layout>
       <div className={BP.mainContainer} id="blog-heading">
-        <div className={BP.goUp} onClick={() => window.scrollTo(0, 0)}>
+        <div
+          className={BP.goUp}
+          role="button"
+          tabIndex="0"
+          onKeyPress={() => window.scrollTo(0, 0)}
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <img src={Up} alt="go up button" />
           <p>Go Top</p>
         </div>

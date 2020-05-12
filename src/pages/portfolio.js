@@ -28,12 +28,16 @@ const Portfolio = ({ data }) => {
               <p className={PortStyle.itemDescription}>{item.description}</p>
               <div className={PortStyle.buttonsContainer}>
                 <div className={PortStyle.singleButton}>
-                  <a href={item.github} target="_blank">
+                  <a
+                    href={item.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Github
                   </a>
                 </div>
                 <div className={PortStyle.singleButton}>
-                  <a href={item.live} target="_blank">
+                  <a href={item.live} target="_blank" rel="noopener noreferrer">
                     Live
                   </a>
                 </div>

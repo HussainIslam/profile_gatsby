@@ -23,16 +23,36 @@
   flex-grow: 1;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
+.social-media {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 4% 0;
 }
 
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.icon-set:hover,
 .link:hover {
   text-decoration: none;
   color: yellowgreen;
+  fill: yellowgreen;
+  cursor: pointer;
 }
 
 .header {
   font-size: large;
+}
+
+.icon-set {
+  display: flex;
+  align-items: center;
+}
+
+.icon-set img {
+  width: 25px;
+  margin: 5px;
 }
