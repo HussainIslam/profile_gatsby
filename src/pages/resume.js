@@ -40,9 +40,7 @@ const Resume = () => (
               <li className={ResumeStyle.hightlightListItem}>
                 Received President's Honor List Award Multiple times
               </li>
-              <li className={ResumeStyle.hightlightListItem}>
-                Open Source Contributor
-              </li>
+
               <li className={ResumeStyle.hightlightListItem}>
                 Seneca's SMILE mentor for new students
               </li>
@@ -187,7 +185,7 @@ const Resume = () => (
               <ul className={ResumeStyle.listOfResponsibilities}>
                 <li className={ResumeStyle.responsibility}>
                   Helping new students transition into college by providing
-                  information and support
+                  necessary information and support
                 </li>
               </ul>
             </div>

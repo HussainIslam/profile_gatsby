@@ -86,6 +86,7 @@
 }
 
 .highlight-list {
+  padding-left: 170px;
 }
 
 .highlight-list-item {
@@ -98,13 +99,6 @@
 
 .degree {
   margin-bottom: 20px;
-}
-
-.degree-name {
-  font-weight: bold;
-}
-
-.degree-institute {
 }
 
 .degree-year {
@@ -179,16 +173,22 @@
   border: 5px solid #4a8b50;
 }
 
-.experience-position {
+.degree-name,
+.experience-position,
+.volunteer-position {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-.experience-organization {
+.degree-institute,
+.experience-organization,
+.volunteer-organization {
   font-style: italic;
 }
 
-.experience-tenure {
+.degree-year,
+.experience-tenure,
+.volunteer-tenure {
   background-color: #4a8b50;
   opacity: 0.6;
   color: white;
@@ -205,17 +205,7 @@
 }
 
 .volunteer {
-}
-
-.volunteer-position {
-}
-
-.volunteer-organization {
-}
-
-.volunteer-tenure {
-}
-.volunteer-responsibilities {
+  padding-left: 90px;
 }
 
 @media screen and (max-width: 800px) {
