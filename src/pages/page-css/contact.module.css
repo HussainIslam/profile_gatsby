@@ -62,3 +62,33 @@
 .reset-button:hover {
   background-color: #7a0920;
 }
+
+@media screen and (max-width: 800px) {
+  .input-div {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .input-div:first-child {
+    margin-top: 20px;
+  }
+
+  .input-label {
+    font-size: 0.8em;
+  }
+
+  .input-field {
+    width: 100%;
+    font-size: 0.8em;
+    padding: 7px 10px;
+  }
+
+  .submit-button,
+  .reset-button {
+    font-size: 0.9em;
+    flex-basis: 100px;
+    height: 35px;
+  }
+}
