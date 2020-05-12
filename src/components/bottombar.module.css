@@ -3,16 +3,17 @@
   display: flex;
   align-items: center;
   color: white;
-  height: 250px;
+  height: 180px;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 .brand {
-  flex-grow: 2;
+  flex-grow: 1;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.3em;
 }
 
 .social-media,
@@ -55,4 +56,44 @@
 .icon-set img {
   width: 25px;
   margin: 5px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .brand {
+    position: absolute;
+    width: 40%;
+    margin-top: -40px;
+    margin-left: 3px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .social-media {
+    flex-direction: row;
+    height: fit-content;
+    width: 30%;
+  }
+
+  .icon-set img {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+  }
+
+  .icon-set a {
+    display: none;
+  }
+
+  .only-links-container {
+    text-align: center;
+  }
+
+  .link {
+    font-size: 0.8em;
+  }
+
+  .header {
+    display: none;
+  }
 }

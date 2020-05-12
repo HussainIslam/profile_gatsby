@@ -11,7 +11,7 @@ import BB from "./bottombar.module.css"
 
 const BottomBar = () => (
   <div className={BB.mainContainer}>
-    <div className={BB.brand}>HUSSAIN</div>
+    <div className={BB.brand}>I am Hussain</div>
     <div className={BB.socialMedia}>
       <div className={BB.iconSet}>
         <img src={GitHub} alt="github logo" />
@@ -39,8 +39,10 @@ const BottomBar = () => (
       </div>
     </div>
     <div className={BB.linksMainContainer}>
-      <div className={BB.header}>Quick Links</div>
       <div className={BB.onlyLinksContainer}>
+        <Link className={BB.link} to="/">
+          Home
+        </Link>
         <Link className={BB.link} to="/about/">
           About
         </Link>
@@ -62,16 +64,16 @@ const BottomBar = () => (
       <div className={BB.header}>Useful Links</div>
       <div className={BB.onlyLinksContainer}>
         <a className={BB.link} href="https://google.com">
-          Link 1
+          Google
         </a>
-        <a className={BB.link} href="https://google.com">
-          Link 2
+        <a className={BB.link} href="https://medium.com">
+          Medium
         </a>
-        <a className={BB.link} href="https://google.com">
-          Link 3
+        <a className={BB.link} href="https://w3schools.com">
+          W3Schools
         </a>
-        <a className={BB.link} href="https://google.com">
-          Link 4
+        <a className={BB.link} href="https://freecodecamp.com">
+          FreeCodeCamp
         </a>
       </div>
     </div>
