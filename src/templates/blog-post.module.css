@@ -2,6 +2,39 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.go-up {
+  position: fixed;
+  right: 5%;
+  bottom: 25%;
+  cursor: pointer;
+}
+
+.go-up > img {
+  width: 50px;
+}
+
+.go-up > p {
+  color: #4a8b50;
+}
+
+.go-back {
+  position: fixed;
+  right: 10%;
+  bottom: 25%;
+}
+
+.go-back img {
+  width: 50px;
+}
+
+.go-back p {
+  color: #4a8b50;
+}
+
+.go-back a {
+  text-decoration: none;
+}
+
 .blog-heading {
   font-size: 2.5em;
 }
@@ -73,4 +106,56 @@
 
 .blog-table-of-contents p {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .blog-heading {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .blog-heading-metadata {
+    font-size: 0.6em;
+  }
+
+  .blog-table-of-contents {
+    display: none;
+  }
+
+  .blog-body {
+    width: 100%;
+  }
+
+  .blog-body * {
+    font-size: 10px;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .blog-body h1 {
+    font-size: 1.5em;
+  }
+
+  .blog-body h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .blog-body h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .blog-body h4 {
+    font-size: 1.1em;
+  }
+
+  .blog-body h5 {
+    font-size: 1em;
+  }
+
+  .blog-body h6 {
+    font-size: 1em;
+  }
 }

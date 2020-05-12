@@ -1,7 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Up from "../images/up.svg"
+import Left from "../images/left.svg"
 
 import BP from "./blog-post.module.css"
 
@@ -9,7 +11,17 @@ export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
     <Layout>
-      <div className={BP.mainContainer}>
+      <div className={BP.mainContainer} id="blog-heading">
+        <div className={BP.goUp} onClick={() => window.scrollTo(0, 0)}>
+          <img src={Up} alt="go up button" />
+          <p>Go Top</p>
+        </div>
+        <div className={BP.goBack}>
+          <Link to="/blog">
+            <img src={Left} alt="go back button" />
+            <p>Go Back</p>
+          </Link>
+        </div>
         <h1 className={BP.blogHeading}>{post.frontmatter.title}</h1>
         <h2 className={BP.blogHeadingMetadata}>
           Posted on: {post.frontmatter.date}
