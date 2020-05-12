@@ -82,12 +82,18 @@
   text-align: center;
   font-size: 1.4em;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .highlight-list {
 }
 
 .highlight-list-item {
+}
+
+.degrees-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .degree {
@@ -201,7 +207,7 @@
 .volunteer {
 }
 
-.volunteerPosition {
+.volunteer-position {
 }
 
 .volunteer-organization {
@@ -210,4 +216,122 @@
 .volunteer-tenure {
 }
 .volunteer-responsibilities {
+}
+
+@media screen and (max-width: 800px) {
+  .resume-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .summary-container {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .detail-resume-container {
+    width: 100%;
+    min-width: unset;
+    padding-left: 5px;
+  }
+
+  .fixed-container {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .section-container {
+    margin-top: 50px;
+  }
+
+  .section-container:first-child {
+    margin-top: 30px;
+  }
+
+  .section-header {
+    font-size: 1em;
+  }
+
+  .highlight-list {
+    padding-left: 20px;
+    font-size: 0.8em;
+  }
+
+  .highlight-list-item {
+  }
+
+  .degrees-container {
+  }
+
+  .degree {
+    margin-bottom: 20px;
+  }
+
+  /* the vertical ruler*/
+  .experiences-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* the vertical ruler*/
+  .experiences-container::after {
+    left: 0;
+  }
+
+  /* Outer Container of the Content*/
+  .experience {
+    padding: 5px 25px;
+  }
+
+  /* Add arrows to the right container (pointing left) */
+  .experience::before {
+    top: 18px;
+    left: 15px;
+  }
+
+  /* Circles on the timeline */
+  .experience::after {
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    left: -7px;
+  }
+
+  /* The actual content */
+  .experience-container {
+    padding: 10px 15px;
+  }
+  .degree-name,
+  .experience-position,
+  .volunteer-position {
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+
+  .degree-institute,
+  .experience-organization,
+  .volunteer-organization {
+    font-style: italic;
+    font-size: 0.8em;
+  }
+
+  .experience-tenure,
+  .volunteer-tenure,
+  .degree-year,
+  .degree-award {
+    font-size: 0.8em;
+  }
+
+  .list-of-responsibilities,
+  .volunteer-responsibilities {
+    padding-left: 20px;
+  }
+
+  .responsibility {
+    font-size: 0.8em;
+  }
 }
