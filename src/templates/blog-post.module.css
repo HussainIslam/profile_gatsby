@@ -115,6 +115,29 @@
     font-weight: bold;
   }
 
+  .go-up {
+    right: 3%;
+    bottom: 5%;
+  }
+
+  .go-up > img {
+    width: 30px;
+  }
+
+  .go-up > p,
+  .go-back p {
+    display: none;
+  }
+
+  .go-back {
+    right: 12%;
+    bottom: 5%;
+  }
+
+  .go-back img {
+    width: 30px;
+  }
+
   .blog-heading-metadata {
     font-size: 0.6em;
   }
