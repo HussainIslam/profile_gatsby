@@ -14,9 +14,6 @@ const Portfolio = ({ data }) => {
     <Layout>
       <SEO title="Portfolio" />
       <h2>My Works</h2>
-      <br />
-      <br />
-      <br />
       {data.allPortfolioCsv.nodes.map((item, index) => {
         return (
           <div key={index} className={PortStyle.mainContainer}>
@@ -31,10 +28,14 @@ const Portfolio = ({ data }) => {
               <p className={PortStyle.itemDescription}>{item.description}</p>
               <div className={PortStyle.buttonsContainer}>
                 <div className={PortStyle.singleButton}>
-                  <a href={item.github}>Github</a>
+                  <a href={item.github} target="_blank">
+                    Github
+                  </a>
                 </div>
                 <div className={PortStyle.singleButton}>
-                  <a href={item.live}>Live</a>
+                  <a href={item.live} target="_blank">
+                    Live
+                  </a>
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   margin-bottom: 100px;
+  margin-top: 50px;
 }
 .image-container {
   position: relative;
@@ -71,4 +72,41 @@
 .single-button:hover {
   background-color: #2a502e;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    margin-bottom: 15px;
+  }
+  .info-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    margin-top: 20px;
+    height: 100px;
+  }
+
+  .item-description {
+    color: black;
+    text-shadow: none;
+    font-size: 0.7em;
+  }
+
+  .buttons-container {
+    justify-content: center;
+  }
+
+  .single-button {
+    flex-basis: 80px;
+    height: 30px;
+  }
+
+  .single-button a {
+    font-size: 0.7em;
+  }
 }
