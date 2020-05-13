@@ -17,6 +17,5 @@ export const usePorfolioCsv = () => {
     `
   )
 
-  console.log(data.allPortfolioCsv.nodes)
   return data
 }
