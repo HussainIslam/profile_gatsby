@@ -1,6 +1,31 @@
 .main-container {
 }
 
+.main-points-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-points {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  border: 2px solid #4a8b50;
+  background-color: #d2fad6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  /* box-shadow: 0 0 10px 5px #4a8b50; */
+  font-weight: bold;
+}
+
+.main-points:hover {
+  background-color: #4a8b50;
+  color: white;
+}
+
 .section-container {
   margin-top: 40px;
 }
@@ -19,6 +44,7 @@
 }
 
 .section-text {
+  margin-top: 20px;
   text-align: justify;
 }
 
@@ -32,4 +58,22 @@
 
 .show-element {
   display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .main-points-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .main-points {
+    font-size: 0.7em;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+  .main-points:hover {
+    background-color: #d2fad6;
+    color: black;
+  }
 }

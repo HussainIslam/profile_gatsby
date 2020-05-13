@@ -39,6 +39,14 @@ class About extends Component {
       <Layout>
         <SEO title="About" />
         <h1>About</h1>
+        <div className={AboutStyle.mainPointsContainer}>
+          <div className={AboutStyle.mainPoints}>Learner</div>
+          <div className={AboutStyle.mainPoints}>Flexible</div>
+          <div className={AboutStyle.mainPoints}>Curious</div>
+          <div className={AboutStyle.mainPoints}>Passionate</div>
+          <div className={AboutStyle.mainPoints}>Ambitious</div>
+          <div className={AboutStyle.mainPoints}>Explorer</div>
+        </div>
         <div className={AboutStyle.mainContainer}>
           <div className={AboutStyle.sectionContainer}>
             <div
@@ -230,12 +238,12 @@ class About extends Component {
               </p>
               <p>
                 Metaphorically speaking, for technical dimension, I consider
-                myself to be someone in a buffet. I am still in the tasting
-                phasing where I want to taste different technologies, different
-                programming languages before I settle down. I believe every
-                technology has something amazing about it. So, this early on in
-                my career I don’t want to miss out the good things. I will have
-                time to choose.
+                myself to be someone in a buffet or a traveller. I am still in
+                the tasting phasing where I want to taste different
+                technologies, different programming languages before I settle
+                down. I believe every technology has something amazing about it.
+                So, this early on in my career I don’t want to miss out the good
+                things. I will have time to choose.
               </p>
             </div>
           </div>
