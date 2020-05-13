@@ -4,22 +4,22 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Placeholder from "../images/portfolio_images/portfolio_realtor.png"
+import { usePorfolioCsv } from "../hooks/use-portfolio-csv"
 
 import PortStyle from "./page-css/portfolio.module.css"
 
-const Portfolio = ({ data }) => {
-  console.log(data.allPortfolioCsv.nodes)
+const Portfolio = () => {
+  const { nodes } = usePorfolioCsv().allPortfolioCsv
   return (
     <Layout>
       <SEO title="Portfolio" />
       <h2>My Works</h2>
-      {data.allPortfolioCsv.nodes.map((item, index) => {
+      {nodes.map((item, index) => {
         return (
           <div key={index} className={PortStyle.mainContainer}>
             <div className={PortStyle.imageContainer}>
               <img
-                src={Placeholder}
+                src={item.screenshot}
                 alt="placeholder"
                 className={PortStyle.imageTag}
               />
