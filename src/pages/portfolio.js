@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { usePorfolioCsv } from "../hooks/use-portfolio-csv"
+// import Placeholder from "../images/portfolio_images/portfolio_realtor.png"
 
 import PortStyle from "./page-css/portfolio.module.css"
 
@@ -19,7 +20,7 @@ const Portfolio = () => {
           <div key={index} className={PortStyle.mainContainer}>
             <div className={PortStyle.imageContainer}>
               <img
-                src={item.screenshot}
+                src={require(`../images/portfolio_images/${item.screenshot}`)}
                 alt="placeholder"
                 className={PortStyle.imageTag}
               />
