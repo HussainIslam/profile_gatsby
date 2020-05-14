@@ -44,14 +44,14 @@ class NavBar extends Component {
               this.state.isMenuOpen ? navbarStyles.hideElement : null
             } ${navbarStyles.displayButtonContainer}`}
           >
-            <div
+            <button
               className={`${
                 this.state.isMenuOpen ? navbarStyles.hideElement : null
               } ${navbarStyles.displayButton}`}
               onClick={this.handleDisplayClick}
             >
               &equiv;
-            </div>
+            </button>
           </div>
           <div
             className={`${
