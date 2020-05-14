@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
+//import AniLink from "gatsby-plugin-transition-link/Link"
 
 import navbarStyles from "./navbar.module.css"
 
@@ -20,9 +21,7 @@ class NavBar extends Component {
       /* Main Container */
       <div className={navbarStyles.container}>
         <div className={navbarStyles.brandContainer}>
-          <AniLink
-            paintDrip
-            hex="#4a8b50"
+          <Link
             className={`${
               this.state.isMenuOpen
                 ? navbarStyles.hideElement
@@ -31,7 +30,7 @@ class NavBar extends Component {
             to="/"
           >
             I am Hussain
-          </AniLink>
+          </Link>
         </div>
         <div
           className={`${
@@ -73,96 +72,84 @@ class NavBar extends Component {
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             }`}
           >
-            <AniLink
-              paintDrip
-              hex="#4a8b50"
+            <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               }  ${navbarStyles.listItem}`}
               to="/"
             >
               Home
-            </AniLink>
+            </Link>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <AniLink
-              paintDrip
-              hex="#4a8b50"
+            <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               }  ${navbarStyles.listItem}`}
               to="/about/"
             >
               About
-            </AniLink>
+            </Link>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <AniLink
-              paintDrip
-              hex="#4a8b50"
+            <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               } ${navbarStyles.listItem}`}
               to="/portfolio/"
             >
               Portfolio
-            </AniLink>
+            </Link>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <AniLink
-              paintDrip
-              hex="#4a8b50"
+            <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               } ${navbarStyles.listItem}`}
               to="/resume/"
             >
               Resume
-            </AniLink>
+            </Link>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <AniLink
-              paintDrip
-              hex="#4a8b50"
+            <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               } ${navbarStyles.listItem}`}
               to="/blog/"
             >
               Blog
-            </AniLink>
+            </Link>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <AniLink
-              paintDrip
-              hex="#4a8b50"
+            <Link
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               } ${navbarStyles.listItem}`}
               to="/contact/"
             >
               Contact
-            </AniLink>
+            </Link>
           </div>
         </div>
       </div>

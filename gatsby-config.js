@@ -94,7 +94,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-csv`,
-    `gatsby-plugin-transition-link`,
+    //`gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

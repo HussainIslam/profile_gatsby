@@ -1,6 +1,6 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-//import { Link } from "gatsby"
+//import AniLink from "gatsby-plugin-transition-link/Link"
+import { Link } from "gatsby"
 
 import GitHub from "../images/social_icons/github.svg"
 import Facebook from "../images/social_icons/facebook.svg"
@@ -60,24 +60,24 @@ const BottomBar = () => (
     </div>
     <div className={BB.linksMainContainer}>
       <div className={BB.onlyLinksContainer}>
-        <AniLink paintDrip hex="#4a8b50" className={BB.link} to="/">
+        <Link className={BB.link} to="/">
           Home
-        </AniLink>
-        <AniLink paintDrip hex="#4a8b50" className={BB.link} to="/about/">
+        </Link>
+        <Link className={BB.link} to="/about/">
           About
-        </AniLink>
-        <AniLink paintDrip hex="#4a8b50" className={BB.link} to="/portfolio/">
+        </Link>
+        <Link className={BB.link} to="/portfolio/">
           Portfolio
-        </AniLink>
-        <AniLink paintDrip hex="#4a8b50" className={BB.link} to="/resume/">
+        </Link>
+        <Link className={BB.link} to="/resume/">
           Resume
-        </AniLink>
-        <AniLink paintDrip hex="#4a8b50" className={BB.link} to="/blog/">
+        </Link>
+        <Link className={BB.link} to="/blog/">
           Blog
-        </AniLink>
-        <AniLink paintDrip hex="#4a8b50" className={BB.link} to="/contact/">
+        </Link>
+        <Link className={BB.link} to="/contact/">
           Contact
-        </AniLink>
+        </Link>
       </div>
     </div>
     <div className={BB.linksMainContainer}>
