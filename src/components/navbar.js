@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import navbarStyles from "./navbar.module.css"
 
@@ -20,7 +20,9 @@ class NavBar extends Component {
       /* Main Container */
       <div className={navbarStyles.container}>
         <div className={navbarStyles.brandContainer}>
-          <Link
+          <AniLink
+            paintDrip
+            hex="#4a8b50"
             className={`${
               this.state.isMenuOpen
                 ? navbarStyles.hideElement
@@ -29,7 +31,7 @@ class NavBar extends Component {
             to="/"
           >
             I am Hussain
-          </Link>
+          </AniLink>
         </div>
         <div
           className={`${
@@ -71,84 +73,96 @@ class NavBar extends Component {
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             }`}
           >
-            <Link
+            <AniLink
+              paintDrip
+              hex="#4a8b50"
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               }  ${navbarStyles.listItem}`}
               to="/"
             >
               Home
-            </Link>
+            </AniLink>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <Link
+            <AniLink
+              paintDrip
+              hex="#4a8b50"
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               }  ${navbarStyles.listItem}`}
               to="/about/"
             >
               About
-            </Link>
+            </AniLink>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <Link
+            <AniLink
+              paintDrip
+              hex="#4a8b50"
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               } ${navbarStyles.listItem}`}
               to="/portfolio/"
             >
               Portfolio
-            </Link>
+            </AniLink>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <Link
+            <AniLink
+              paintDrip
+              hex="#4a8b50"
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               } ${navbarStyles.listItem}`}
               to="/resume/"
             >
               Resume
-            </Link>
+            </AniLink>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <Link
+            <AniLink
+              paintDrip
+              hex="#4a8b50"
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               } ${navbarStyles.listItem}`}
               to="/blog/"
             >
               Blog
-            </Link>
+            </AniLink>
           </div>
           <div
             className={`${
               this.state.isMenuOpen ? null : navbarStyles.hideElement
             } ${navbarStyles.listItemContainer}`}
           >
-            <Link
+            <AniLink
+              paintDrip
+              hex="#4a8b50"
               className={`${
                 this.state.isMenuOpen ? null : navbarStyles.hideElement
               } ${navbarStyles.listItem}`}
               to="/contact/"
             >
               Contact
-            </Link>
+            </AniLink>
           </div>
         </div>
       </div>
