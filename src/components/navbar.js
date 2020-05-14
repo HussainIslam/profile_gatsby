@@ -44,14 +44,14 @@ class NavBar extends Component {
               this.state.isMenuOpen ? navbarStyles.hideElement : null
             } ${navbarStyles.displayButtonContainer}`}
           >
-            <button
+            <div
               className={`${
                 this.state.isMenuOpen ? navbarStyles.hideElement : null
               } ${navbarStyles.displayButton}`}
               onClick={this.handleDisplayClick}
             >
               &equiv;
-            </button>
+            </div>
           </div>
           <div
             className={`${
@@ -64,7 +64,7 @@ class NavBar extends Component {
               } ${navbarStyles.closeButton}`}
               onClick={this.handleDisplayClick}
             >
-              &#8904;
+              X
             </button>
           </div>
           <div
