@@ -4,8 +4,8 @@
 
 .go-up {
   position: fixed;
-  right: 5%;
-  bottom: 25%;
+  left: 95%;
+  top: 80%;
   cursor: pointer;
 }
 
@@ -19,8 +19,8 @@
 
 .go-back {
   position: fixed;
-  right: 10%;
-  bottom: 25%;
+  left: 89%;
+  top: 80%;
 }
 
 .go-back img {

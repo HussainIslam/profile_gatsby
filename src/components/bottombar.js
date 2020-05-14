@@ -1,6 +1,6 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 import GitHub from "../images/social_icons/github.svg"
 import Facebook from "../images/social_icons/facebook.svg"
