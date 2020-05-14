@@ -1,6 +1,7 @@
 import React from "react"
 
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,13 +18,18 @@ const Blog = ({ data }) => (
     <hr />
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id} className={BlogStyle.blogContainer}>
-        <Link to={node.fields.slug} className={BlogStyle.blogLinks}>
+        <AniLink
+          paintDrip
+          hex="#4a8b50"
+          to={node.fields.slug}
+          className={BlogStyle.blogLinks}
+        >
           <h3 className={BlogStyle.blogTitle}>{node.frontmatter.title}</h3>{" "}
           <h4 className={BlogStyle.blogPostDate}>
             Posted: {node.frontmatter.date}
           </h4>
           <p>{node.excerpt}</p>
-        </Link>
+        </AniLink>
       </div>
     ))}
   </Layout>
