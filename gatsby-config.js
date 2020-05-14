@@ -95,5 +95,20 @@ module.exports = {
     },
     `gatsby-transformer-csv`,
     `gatsby-plugin-transition-link`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `I am Hussain`,
+        short_name: `I am Hussain`,
+        start_url: `/`,
+        background_color: `#4a8b50`,
+        theme_color: `#4a8b50`,
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: `standalone`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
