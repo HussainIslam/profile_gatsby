@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://www.iamhussain.ca">
+    <img alt="Gatsby" src="src/images/site_brand/android-chrome-192x192.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -14,7 +14,7 @@ I am building my personal profile website for professional purpose 😎. To buil
 
 <h3 align="center">
   🚀🚀🚀
-  <a href="http://iamhussain.ca">LIVE WEBSITE</a>
+  <a href="https://iamhussain.ca">LIVE WEBSITE</a>
   🚀🚀🚀
 </h3>
 
