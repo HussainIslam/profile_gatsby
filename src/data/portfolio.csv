@@ -1,3 +1,6 @@
 name,live,github,screenshot,description
 ecommerce,https://crwn-ecom-test.herokuapp.com/,https://github.com/HussainIslam/ecommerce_react,portfolio_ecommerce.png,"This is an e-commerce website built with React, Redux, and Firebase. Deployed in Heroku"
 realtor,http://167.99.112.252/,https://github.com/HussainIslam/Realtor_App,portfolio_realtor.png,This is an app for real estate app built with Django and Jinja. Deployed in Digital Ocean
+employee management,https://serene-gorge-25201.herokuapp.com/,https://github.com/HussainIslam/employeeManagementBasic,portfolio_employee.png,"This is an employee management app built with Node.js, MongoDB, Express, and multer. It is deployed in heroku"
+loan_calculator,https://hussainislam.github.io/LoanRepaymentSchedule/,https://github.com/HussainIslam/LoanRepaymentSchedule,portfolio_loan_calculator.png,"This is a loan calculator created with HTML, CSS, and Vanilla Javascript."
+dictionary,https://hussainislam.github.io/Dictionary/,https://github.com/HussainIslam/Dictionary,portfolio_dictionary.png,"This is a REST API based dictionary created with basic HTML, CSS, and Javascript"
