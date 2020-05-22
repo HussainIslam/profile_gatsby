@@ -116,12 +116,15 @@
   }
 
   .go-up {
-    right: 3%;
+    left: 87%;
     bottom: 5%;
+    width: 40px;
+    height: 40px;
   }
 
-  .go-up > img {
-    width: 30px;
+  .go-up > img,
+  .go-back img {
+    width: 40px;
   }
 
   .go-up > p,
@@ -130,12 +133,9 @@
   }
 
   .go-back {
-    right: 12%;
+    composes: go-up;
+    left: 75%;
     bottom: 5%;
-  }
-
-  .go-back img {
-    width: 30px;
   }
 
   .blog-heading-metadata {
