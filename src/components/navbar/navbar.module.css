@@ -52,8 +52,9 @@
 }
 
 .list-item:hover {
-  text-decoration: underline;
-  color: yellowgreen;
+  text-decoration: none;
+  color: white;
+  text-shadow: #fff 1px 0 10px;
 }
 
 @media screen and (max-width: 800px) {
