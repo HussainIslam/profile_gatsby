@@ -69,6 +69,30 @@
   font-size: 1.1em;
 }
 
+.blog-body table {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.blog-body th:not(:first-child),
+.blog-body td:not(:first-child) {
+  text-align: center;
+}
+
+.blog-body thead > tr {
+  background-color: #4a8b50;
+  color: white;
+  font-size: 1em;
+}
+
+.blog-body tbody > tr {
+  border-bottom: 1px solid lightgray;
+}
+
+.blog-body tbody > tr:last-child {
+  border-bottom: 3px solid #4a8b50;
+}
+
 .blog-table-of-contents {
   font-size: 0.8em;
   width: 12%;
@@ -180,5 +204,11 @@
 
   .blog-body h6 {
     font-size: 1em;
+  }
+
+  .blog-body th,
+  .blog-body td {
+    width: fit-content;
+    word-wrap: break-word;
   }
 }
