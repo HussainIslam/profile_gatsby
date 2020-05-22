@@ -2,10 +2,10 @@ import React, { Component } from "react"
 //import AniLink from "gatsby-plugin-transition-link/Link"
 import { Link } from "gatsby"
 
-import GitHub from "../images/social_icons/github.svg"
-import Facebook from "../images/social_icons/facebook.svg"
-import Linkedin from "../images/social_icons/linkedin.svg"
-import Youtube from "../images/social_icons/youtube.svg"
+import GitHub from "../../images/social_icons/github.svg"
+import Facebook from "../../images/social_icons/facebook.svg"
+import Linkedin from "../../images/social_icons/linkedin.svg"
+import Youtube from "../../images/social_icons/youtube.svg"
 
 import BB from "./bottombar.module.css"
 

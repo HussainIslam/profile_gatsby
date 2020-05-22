@@ -8,8 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import NavBar from "./navbar"
-import BottomBar from "./bottombar"
+import NavBar from "./navbar/navbar"
+import BottomBar from "./bottombar/bottombar"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.css"
