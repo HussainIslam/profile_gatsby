@@ -14,7 +14,7 @@ jobs:
       - run: npm run build
       - uses: netlify/actions/cli@master
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUT_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         with:
           args: deploy --dir=public --prod
