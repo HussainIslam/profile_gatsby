@@ -25,6 +25,10 @@ const TechIcons = () => {
                 data-sal-easing="ease"
                 title={titleName}
               />
+              <p className={TI.iconName}>
+                {titleName[0].toUpperCase() +
+                  titleName.substring(1, titleName.length)}
+              </p>
             </div>
           )
         })}
