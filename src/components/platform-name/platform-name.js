@@ -16,12 +16,11 @@ const PlatformName = () => (
     >
       <div className={PNStyles.platformTitle}>Web</div>
       <div className={PNStyles.platformDescription}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-        euismod metus nec justo ullamcorper, ultricies posuere enim feugiat.
-        Aenean dignissim in leo ac molestie. Cras in arcu sed nunc gravida
-        cursus ac consequat purus. Sed massa nisi, gravida ut tempus in,
-        volutpat ac nunc. Phasellus quam nisi, porta non felis vel, fermentum
-        porttitor felis.
+        Web or often referred to as Internet is a platform that can host
+        different documents and other resources via Hypertext Transfer Protocol.
+        This is one of the most evolving parts of computer programming. With
+        advent of different technologies that facilitate programming for the
+        web, it's demand and capacity has sky rocketed.
       </div>
     </div>
     <div
@@ -33,11 +32,10 @@ const PlatformName = () => (
     >
       <div className={PNStyles.platformTitle}>Mobile</div>
       <div className={PNStyles.platformDescription}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-        euismod metus nec justo ullamcorper, ultricies posuere enim feugiat.
-        Aenean dignissim in leo ac molestie. Cras in arcu sed nunc gravida
-        cursus ac consequat purus. Sed massa nisi, gravida ut tempus in,
-        volutpat ac nunc.
+        Mobile is another fastest growing platform for software development.With
+        invention of mobile devices that are significantly more powerful than
+        legacy computing systems,the demand for developing for mobile is
+        booming.
       </div>
     </div>
     <div
@@ -49,10 +47,9 @@ const PlatformName = () => (
     >
       <div className={PNStyles.platformTitle}>Desktop</div>
       <div className={PNStyles.platformDescription}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-        euismod metus nec justo ullamcorper, ultricies posuere enim feugiat.
-        Aenean dignissim in leo ac molestie. Cras in arcu sed nunc gravida
-        cursus ac consequat purus.
+        Desktop or personal computer has alwasy been the main focus of software
+        development. In invention of web and mobile hasn't reduced the
+        importance of development for desktop even by a bit (pun intended).
       </div>
     </div>
     <Topic align={"flex-end"}>
@@ -66,10 +63,9 @@ const PlatformName = () => (
       data-sal-easing="ease"
     >
       <div className={PNStyles.platformDescription}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-        euismod metus nec justo ullamcorper, ultricies posuere enim feugiat.
-        Aenean dignissim in leo ac molestie. Cras in arcu sed nunc gravida
-        cursus ac consequat purus.
+        Hussain, is what people call me. My full name is Md. Hussainul Islam
+        Sajib. I started coding in May 2018 in college. I soon realized that
+        computer programming is something I was destined to do. Thus, I code.
       </div>
       <div className={PNStyles.myName}>Hussain</div>
     </div>
