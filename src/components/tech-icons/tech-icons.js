@@ -3,7 +3,7 @@ import React from "react"
 import { useTechIcons } from "../../hooks/use-tech-icons"
 import TI from "./tech-icons.module.css"
 
-import Topic from "./topic"
+import Topic from "../topic"
 
 const TechIcons = () => {
   const data = useTechIcons()
