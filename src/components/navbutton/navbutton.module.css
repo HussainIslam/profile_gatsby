@@ -1,13 +1,13 @@
 .list-item {
     flex-grow: 1;
     color: inherit;
-    text-shadow: 0 0 4px black;
+    font-weight: bold;
 }
   
 .list-item:hover {
     text-decoration: none;
-    color: white;
-    text-shadow: #fff 1px 0 10px;
+    color: inherit;
+    text-shadow: lightgray 1px 0 10px;
 }
 
 @media screen and (max-width: 800px) {

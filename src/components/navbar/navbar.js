@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import NavButton from '../navbutton/navbutton'
+import {FaTimesCircle, FaBars} from 'react-icons/fa'
 
 import navbarStyles from "./navbar.module.css"
 
@@ -17,12 +18,12 @@ const NavBar = () =>{
       <div className={`${isMenuOpen ? navbarStyles.modifiedLinks: navbarStyles.links}`}>
         <div className={`${isMenuOpen ? navbarStyles.hideElement : null} ${navbarStyles.displayButtonContainer}`}>
           <button className={`${isMenuOpen ? navbarStyles.hideElement : null} ${navbarStyles.displayButton}`}onClick={handleDisplayClick}>
-            &equiv;
+            <FaBars />
           </button>
         </div>
         <div className={`${isMenuOpen ? null : navbarStyles.hideElement} ${navbarStyles.closeButtonContainer}`}>
           <button className={`${isMenuOpen ? null : navbarStyles.hideElement} ${navbarStyles.closeButton}`}onClick={handleDisplayClick}>
-            X
+            <FaTimesCircle />
           </button>
         </div>
         <NavButton text="Home" isMenuOpen={isMenuOpen} />

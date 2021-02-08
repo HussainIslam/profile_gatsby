@@ -2,30 +2,8 @@
   height: 50px;
   display: flex;
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #4a8b50;
-  color: white;
-  /* box-shadow: 0 0 5px 3px #4a8b50; */
+  color: #4a8b50;
   margin-bottom: 50px;
-}
-
-.brand-container {
-  flex-grow: 3;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.brand {
-  margin-left: 80px;
-  font-size: 1.5vw;
-  text-decoration: none;
-  color: inherit;
-  text-shadow: 0 0 5px black;
-}
-
-.brand:hover {
-  text-decoration: none;
-  color: inherit;
 }
 
 .links {
@@ -49,13 +27,12 @@
 .list-item {
   flex-grow: 1;
   color: inherit;
-  text-shadow: 0 0 4px black;
 }
 
 .list-item:hover {
   text-decoration: none;
   color: white;
-  text-shadow: #fff 1px 0 10px;
+  text-shadow: black 1px 0 10px;
 }
 
 @media screen and (max-width: 800px) {
