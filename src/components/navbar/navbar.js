@@ -1,160 +1,141 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 //import AniLink from "gatsby-plugin-transition-link/Link"
 
 import navbarStyles from "./navbar.module.css"
 
-class NavBar extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isMenuOpen: false,
-    }
+const NavBar = () =>{
+  const [isMenuOpen, setisMenuOpen] = useState(false)
+
+  const handleDisplayClick = event => {
+    setisMenuOpen(!isMenuOpen)
   }
 
-  handleDisplayClick = event => {
-    this.setState({ isMenuOpen: !this.state.isMenuOpen })
-  }
-
-  render() {
-    return (
-      /* Main Container */
-      <div className={navbarStyles.container}>
-        <div className={navbarStyles.brandContainer}>
+  return (
+    /* Main Container */
+    <div className={navbarStyles.container}>
+      <div
+        className={`${
+          isMenuOpen
+            ? navbarStyles.modifiedLinks
+            : navbarStyles.links
+        }`}
+      >
+        <div
+          className={`${
+            isMenuOpen ? navbarStyles.hideElement : null
+          } ${navbarStyles.displayButtonContainer}`}
+        >
+          <button
+            className={`${
+              isMenuOpen ? navbarStyles.hideElement : null
+            } ${navbarStyles.displayButton}`}
+            onClick={handleDisplayClick}
+          >
+            &equiv;
+          </button>
+        </div>
+        <div
+          className={`${
+            isMenuOpen ? null : navbarStyles.hideElement
+          } ${navbarStyles.closeButtonContainer}`}
+        >
+          <button
+            className={`${
+              isMenuOpen ? null : navbarStyles.hideElement
+            } ${navbarStyles.closeButton}`}
+            onClick={handleDisplayClick}
+          >
+            X
+          </button>
+        </div>
+        <div
+          className={`${navbarStyles.listItemContainer} ${
+            isMenuOpen ? null : navbarStyles.hideElement
+          }`}
+        >
           <Link
             className={`${
-              this.state.isMenuOpen
-                ? navbarStyles.hideElement
-                : navbarStyles.brand
-            }`}
+              isMenuOpen ? null : navbarStyles.hideElement
+            }  ${navbarStyles.listItem}`}
             to="/"
           >
-            I am Hussain
+            Home
           </Link>
         </div>
         <div
           className={`${
-            this.state.isMenuOpen
-              ? navbarStyles.modifiedLinks
-              : navbarStyles.links
-          }`}
+            isMenuOpen ? null : navbarStyles.hideElement
+          } ${navbarStyles.listItemContainer}`}
         >
-          <div
+          <Link
             className={`${
-              this.state.isMenuOpen ? navbarStyles.hideElement : null
-            } ${navbarStyles.displayButtonContainer}`}
+              isMenuOpen ? null : navbarStyles.hideElement
+            }  ${navbarStyles.listItem}`}
+            to="/about/"
           >
-            <button
-              className={`${
-                this.state.isMenuOpen ? navbarStyles.hideElement : null
-              } ${navbarStyles.displayButton}`}
-              onClick={this.handleDisplayClick}
-            >
-              &equiv;
-            </button>
-          </div>
-          <div
+            About
+          </Link>
+        </div>
+        <div
+          className={`${
+            isMenuOpen ? null : navbarStyles.hideElement
+          } ${navbarStyles.listItemContainer}`}
+        >
+          <Link
             className={`${
-              this.state.isMenuOpen ? null : navbarStyles.hideElement
-            } ${navbarStyles.closeButtonContainer}`}
+              isMenuOpen ? null : navbarStyles.hideElement
+            } ${navbarStyles.listItem}`}
+            to="/portfolio/"
           >
-            <button
-              className={`${
-                this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.closeButton}`}
-              onClick={this.handleDisplayClick}
-            >
-              X
-            </button>
-          </div>
-          <div
-            className={`${navbarStyles.listItemContainer} ${
-              this.state.isMenuOpen ? null : navbarStyles.hideElement
-            }`}
-          >
-            <Link
-              className={`${
-                this.state.isMenuOpen ? null : navbarStyles.hideElement
-              }  ${navbarStyles.listItem}`}
-              to="/"
-            >
-              Home
-            </Link>
-          </div>
-          <div
+            Portfolio
+          </Link>
+        </div>
+        <div
+          className={`${
+            isMenuOpen ? null : navbarStyles.hideElement
+          } ${navbarStyles.listItemContainer}`}
+        >
+          <Link
             className={`${
-              this.state.isMenuOpen ? null : navbarStyles.hideElement
-            } ${navbarStyles.listItemContainer}`}
+              isMenuOpen ? null : navbarStyles.hideElement
+            } ${navbarStyles.listItem}`}
+            to="/resume/"
           >
-            <Link
-              className={`${
-                this.state.isMenuOpen ? null : navbarStyles.hideElement
-              }  ${navbarStyles.listItem}`}
-              to="/about/"
-            >
-              About
-            </Link>
-          </div>
-          <div
+            Resume
+          </Link>
+        </div>
+        <div
+          className={`${
+            isMenuOpen ? null : navbarStyles.hideElement
+          } ${navbarStyles.listItemContainer}`}
+        >
+          <Link
             className={`${
-              this.state.isMenuOpen ? null : navbarStyles.hideElement
-            } ${navbarStyles.listItemContainer}`}
+              isMenuOpen ? null : navbarStyles.hideElement
+            } ${navbarStyles.listItem}`}
+            to="/blog/"
           >
-            <Link
-              className={`${
-                this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.listItem}`}
-              to="/portfolio/"
-            >
-              Portfolio
-            </Link>
-          </div>
-          <div
+            Blog
+          </Link>
+        </div>
+        <div
+          className={`${
+            isMenuOpen ? null : navbarStyles.hideElement
+          } ${navbarStyles.listItemContainer}`}
+        >
+          <Link
             className={`${
-              this.state.isMenuOpen ? null : navbarStyles.hideElement
-            } ${navbarStyles.listItemContainer}`}
+              isMenuOpen ? null : navbarStyles.hideElement
+            } ${navbarStyles.listItem}`}
+            to="/contact/"
           >
-            <Link
-              className={`${
-                this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.listItem}`}
-              to="/resume/"
-            >
-              Resume
-            </Link>
-          </div>
-          <div
-            className={`${
-              this.state.isMenuOpen ? null : navbarStyles.hideElement
-            } ${navbarStyles.listItemContainer}`}
-          >
-            <Link
-              className={`${
-                this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.listItem}`}
-              to="/blog/"
-            >
-              Blog
-            </Link>
-          </div>
-          <div
-            className={`${
-              this.state.isMenuOpen ? null : navbarStyles.hideElement
-            } ${navbarStyles.listItemContainer}`}
-          >
-            <Link
-              className={`${
-                this.state.isMenuOpen ? null : navbarStyles.hideElement
-              } ${navbarStyles.listItem}`}
-              to="/contact/"
-            >
-              Contact
-            </Link>
-          </div>
+            Contact
+          </Link>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default NavBar

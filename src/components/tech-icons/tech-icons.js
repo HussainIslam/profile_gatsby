@@ -9,7 +9,6 @@ const TechIcons = () => {
   const data = useTechIcons()
   return (
     <div className={TI.mainContainer}>
-      
       <div className={TI.iconContainer}>
         {data.map((item, index) => {
           const titleName = item.node.name.substring(5, item.node.name.length)
