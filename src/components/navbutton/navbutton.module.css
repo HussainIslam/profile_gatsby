@@ -1,0 +1,30 @@
+.list-item {
+    flex-grow: 1;
+    color: inherit;
+    text-shadow: 0 0 4px black;
+}
+  
+.list-item:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: #fff 1px 0 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .list-item-container {
+        width: 100%;
+        flex: 1;
+        background-color: #4a8b50;
+        text-align: center;
+    }
+    
+    .hide-element {
+        display: none;
+    }
+    
+    .list-item {
+        display: block;
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+}
