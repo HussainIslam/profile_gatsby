@@ -1,6 +1,6 @@
 .main-container {
-  width: 90%;
   font-family: "Noto Sans JP", sans-serif;
+
 }
 
 .platform-container {
@@ -10,31 +10,13 @@
   padding: 0;
 }
 
-.platform-title {
-  font-size: 7em;
-  margin: 0px 20px 0px 0px;
-  padding: 0px;
-  background-color: white;
-  color: #cac6c6;
-  font-weight: bold;
-}
-
-.platform-description {
-  font-size: 1em;
-  text-align: justify;
-  background-color: #cac6c6;
-  color: white;
-  flex-basis: 50%;
-  flex-grow: 1;
-}
-
 .my-name {
   font-size: 7em;
-  margin-left: 20px;
-  background-color: white;
-  color: #000;
+  background-color: #4a8b50;
+  color: #FFF;
   font-weight: bolder;
   align-self: flex-end;
+  text-align: center;
   flex-basis: 50%;
   flex-grow: 1;
 }
@@ -43,17 +25,16 @@
   margin-top: 50px;
 }
 
+.sub-heading{
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 800px) {
   .main-container {
     width: 95%;
   }
 
-  .platform-title,
   .my-name {
     font-size: 22vw;
-  }
-
-  .platform-description {
-    display: none;
   }
 }
