@@ -1,8 +1,10 @@
 import React from 'react'
 
+import Style from './about.module.css'
+
 const About = () => {
     return (
-        <div>
+        <div className={Style.writeContainer}>
             <p>
                 I am a Full Stack Developer. My primary web stack includes Python, Django, React, and PostgreSQL. Apart
                 from these I have worked with many other frameworks and libraries, including Node.js, ASP.NET MVC, 
