@@ -21,7 +21,7 @@ const Portfolio = () => {
             <div className={PortStyle.imageContainer}>
               <img
                 src={require(`../images/portfolio_images/${item.screenshot}`)}
-                alt="placeholder"
+                alt="project screenshot"
                 className={PortStyle.imageTag}
               />
             </div>
