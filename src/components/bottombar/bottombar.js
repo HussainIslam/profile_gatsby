@@ -61,21 +61,15 @@ class BottomBar extends Component {
             <Link className={BB.link} to="/">
               Home
             </Link>
-            <Link className={BB.link} to="/about/">
-              About
-            </Link>
+            
             <Link className={BB.link} to="/portfolio/">
               Portfolio
             </Link>
-            <Link className={BB.link} to="/resume/">
-              Resume
-            </Link>
+            
             <Link className={BB.link} to="/blog/">
               Blog
             </Link>
-            <Link className={BB.link} to="/contact/">
-              Contact
-            </Link>
+            
           </div>
         </div>
         <div className={BB.linksMainContainer}>
