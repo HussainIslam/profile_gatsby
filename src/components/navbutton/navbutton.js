@@ -4,7 +4,7 @@ import Styles from './navbutton.module.css'
 
 const NavButton = ({ isMenuOpen, text }) => {
 
-    const toValue = text == 'Home' ? '/' : `/${text.toLowerCase()}/`;
+    const toValue = text === 'Home' ? '/' : `/${text.toLowerCase()}/`;
     
     return (
         <div className={`${Styles.listItemContainer} ${isMenuOpen ? null : Styles.hideElement}`}>

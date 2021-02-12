@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 import NavButton from '../navbutton/navbutton'
 import {FaTimesCircle, FaBars} from 'react-icons/fa'
 
