@@ -1,6 +1,8 @@
 .icon-container {
   display: flex;
   flex-flow: row wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .icon-div {
