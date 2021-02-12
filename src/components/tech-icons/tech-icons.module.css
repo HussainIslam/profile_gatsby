@@ -1,11 +1,6 @@
-.main-container {
-  
-}
-
 .icon-container {
   display: flex;
   flex-flow: row wrap;
-  background-color: red;
 }
 
 .icon-div {
