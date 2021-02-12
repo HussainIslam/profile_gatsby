@@ -27,11 +27,8 @@ const NavBar = () =>{
           </button>
         </div>
         <NavButton text="Home" isMenuOpen={isMenuOpen} />
-        <NavButton text="About" isMenuOpen={isMenuOpen} />
         <NavButton text="Portfolio" isMenuOpen={isMenuOpen} />
-        <NavButton text="Resume" isMenuOpen={isMenuOpen} />
         <NavButton text="Blog" isMenuOpen={isMenuOpen} />
-        <NavButton text="Contact" isMenuOpen={isMenuOpen} />
       </div>
     </div>
   )
