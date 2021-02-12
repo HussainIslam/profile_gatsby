@@ -24,24 +24,14 @@ const Portfolio = () => {
                 alt="project screenshot"
                 className={PortStyle.imageTag}
               />
-            </div>
-            <div className={PortStyle.infoContainer}>
-              <p className={PortStyle.itemDescription}>{item.description}</p>
-              <div className={PortStyle.buttonsContainer}>
-                <div className={PortStyle.singleButton}>
-                  <a
-                    href={item.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Github
-                  </a>
-                </div>
-                <div className={PortStyle.singleButton}>
-                  <a href={item.live} target="_blank" rel="noopener noreferrer">
-                    Live
-                  </a>
-                </div>
+              <div className={PortStyle.infoContainer}>
+                <p className={PortStyle.itemDescription}>{item.description}</p>
+                <a href={item.github} target="_blank" rel="noopener noreferrer">
+                  Github
+                </a>
+                <a href={item.live} target="_blank" rel="noopener noreferrer">
+                  Live
+                </a>
               </div>
             </div>
           </div>
