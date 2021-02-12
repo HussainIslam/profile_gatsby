@@ -20,9 +20,11 @@
 
 .list-item-container:hover{
     background-image: url('../../images/highlight.png');
-    background-size: cover;
+    background-size: 150px;
+    background-repeat: no-repeat;
     background-color: white;
     background-position-y: center;
+    background-position-x: center;
     color: white;
 }
 
