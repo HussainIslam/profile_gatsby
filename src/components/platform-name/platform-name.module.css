@@ -1,6 +1,5 @@
 .main-container {
   font-family: "Noto Sans JP", sans-serif;
-
 }
 
 .platform-container {
@@ -23,10 +22,13 @@
 
 .my-name-topic {
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .sub-heading{
   font-size: 1.3rem;
+  background-color: white;
+  color: #4a8b50;
 }
 
 @media screen and (max-width: 800px) {
