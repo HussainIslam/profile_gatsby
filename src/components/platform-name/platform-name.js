@@ -8,7 +8,7 @@ const PlatformName = () => (
   <div className={PNStyles.mainContainer}>
     <Topic align={"center"}><span className={PNStyles.myNameTopic}>I am </span></Topic>
     <div className={PNStyles.myName}>
-      Hussain
+      HUSSAIN
       <div className={PNStyles.subHeading}>I am a Web Developer</div>
     </div>
     
