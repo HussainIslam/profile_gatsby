@@ -1,0 +1,58 @@
+.main-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.image-container {
+}
+
+.image-tag {
+  width: 100%;
+  box-shadow: 0 0 5px 1px black;
+}
+
+.info-container{
+
+}
+
+.info-container a{
+  display: inline-block;
+  border: 1px solid green;
+  padding: 10px 20px;
+  width: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 5px;
+  text-decoration: none;
+  color: green;
+}
+
+.info-container a:hover{
+  background-color: green;
+  color: white;
+}
+  
+  
+  
+@media screen and (max-width: 800px) {
+.main-container {
+    margin-bottom: 15px;
+}
+.info-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+
+}
+  

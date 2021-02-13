@@ -1,8 +1,8 @@
 name,live,github,screenshot,description
-ecommerce,https://crwn-ecom-test.herokuapp.com/,https://github.com/HussainIslam/ecommerce_react,portfolio_ecommerce.png,"This is an e-commerce website built with React, Redux, and Firebase. Deployed in Heroku"
-realtor,http://167.99.112.252/,https://github.com/HussainIslam/Realtor_App,portfolio_realtor.png,This is an app for real estate app built with Django and Jinja. Deployed in Digital Ocean
-loan_calculator,https://hussainislam.github.io/LoanRepaymentSchedule/,https://github.com/HussainIslam/LoanRepaymentSchedule,portfolio_loan_calculator.png,"This is a loan calculator created with HTML, CSS, and Vanilla Javascript."
-dictionary,https://hussainislam.github.io/Dictionary/,https://github.com/HussainIslam/Dictionary,portfolio_dictionary.png,"This is a REST API based dictionary created with basic HTML, CSS, and Javascript"
-calculator,https://hussainislam.github.io/Calculator/,https://github.com/HussainIslam/Calculator,portfolio_calculator.png,"This is a simple calculator built with HTML, CSS, and Vanilla JS"
-movie_search,https://moviedb-search-vue.netlify.app/,https://github.com/HussainIslam/Movie_Search_Vue.js,portfolio_movies.png,This is a REST API base site built with Vue.js where user can search for movies
-image_search,https://vigorous-perlman-674822.netlify.app/,https://github.com/HussainIslam/image-search,portfolio_image_search.png,This is a REST API based website  built with React to search for open source stock images on unsplash.com
+Ecommerce with React and Firebase,https://crwn-ecom-test.herokuapp.com/,https://github.com/HussainIslam/ecommerce_react,portfolio_ecommerce.png,"This is an e-commerce website built with React, Redux, and Firebase. Deployed in Heroku"
+Realtor Management App with Django,http://167.99.112.252/,https://github.com/HussainIslam/Realtor_App,portfolio_realtor.png,This is an app for real estate app built with Django and Jinja. Deployed in Digital Ocean
+Loan Repayment Calculator with JS,https://hussainislam.github.io/LoanRepaymentSchedule/,https://github.com/HussainIslam/LoanRepaymentSchedule,portfolio_loan_calculator.png,"This is a loan calculator created with HTML, CSS, and Vanilla Javascript."
+Dictionary App with JS,https://hussainislam.github.io/Dictionary/,https://github.com/HussainIslam/Dictionary,portfolio_dictionary.png,"This is a REST API based dictionary created with basic HTML, CSS, and Javascript"
+Calculator with JS,https://hussainislam.github.io/Calculator/,https://github.com/HussainIslam/Calculator,portfolio_calculator.png,"This is a simple calculator built with HTML, CSS, and Vanilla JS"
+Movie Search with Vue.js,https://moviedb-search-vue.netlify.app/,https://github.com/HussainIslam/Movie_Search_Vue.js,portfolio_movies.png,This is a REST API base site built with Vue.js where user can search for movies
+Image Search with React,https://vigorous-perlman-674822.netlify.app/,https://github.com/HussainIslam/image-search,portfolio_image_search.png,This is a REST API based website  built with React to search for open source stock images on unsplash.com
