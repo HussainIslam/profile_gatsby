@@ -5,7 +5,7 @@ import React from 'react'
 const Project = ({item, index}) => {
     return (
         <div key={index} className={Style.mainContainer}>
-            <h4>{item.name}</h4>
+            <h4 className={Style.projectTitle}>{item.name}</h4>
             <div className={Style.imageContainer}>
                 <img
                     src={require(`../../images/portfolio_images/${item.screenshot}`)}

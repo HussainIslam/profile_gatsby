@@ -4,16 +4,18 @@
   margin-bottom: 100px;
   margin-top: 50px;
 }
+
+.project-title {
+  margin-bottom: 30px;
+}
+
 .image-container {
+  margin-bottom: 30px;
 }
 
 .image-tag {
   width: 100%;
   box-shadow: 0 0 5px 1px black;
-}
-
-.info-container{
-
 }
 
 .info-container a{
@@ -36,23 +38,21 @@
   
   
 @media screen and (max-width: 800px) {
-.main-container {
-    margin-bottom: 15px;
-}
-.info-container {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-radius: 0;
-    background-color: white;
-    border: none;
-    box-shadow: none;
-    margin-top: 20px;
-    height: 100px;
-}
-
-
+  .main-container {
+      margin-bottom: 15px;
+  }
+  .info-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 0;
+      background-color: white;
+      border: none;
+      box-shadow: none;
+      margin-top: 20px;
+      height: 100px;
+  }
 
 }
   

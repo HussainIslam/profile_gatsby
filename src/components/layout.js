@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
       <NavBar />
       <div
         style={{
-          margin: `0 auto`,
+          margin: `100px auto`,
           width: `50vw`,
           padding: `0 1.0875rem 1.45rem`,
         }}
