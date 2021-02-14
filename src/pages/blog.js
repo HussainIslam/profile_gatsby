@@ -25,11 +25,19 @@ const Blog = ({ data }) => {
         </div>):
         (<div key={node.id} className={BlogStyle.blogContainer}>
           <Link to={node.fields.slug} className={BlogStyle.blogLinks}>
-            <h3 className={BlogStyle.blogTitle}>{node.frontmatter.title}</h3>{" "}
-            <h4 className={BlogStyle.blogPostDate}>
-              Posted: {node.frontmatter.date}
-            </h4>
-            <p>{node.excerpt}</p>
+            <div style={{ display: "flex" }}>
+              <div style={{ width: `200px`, height: `100%` }}>
+                <Img fixed={node.frontmatter.featuredImage.childImageSharp.fixed} />
+              </div>
+              <div>
+                <h3 className={BlogStyle.blogTitle}>{node.frontmatter.title}</h3>{" "}
+                <h4 className={BlogStyle.blogPostDate}>
+                  Posted: {node.frontmatter.date}
+                </h4>
+                <p>{node.excerpt}</p>
+
+              </div>
+            </div>
           </Link>
         </div>)
       )
@@ -49,8 +57,8 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
             featuredImage{
               childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 125, height: 125) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }

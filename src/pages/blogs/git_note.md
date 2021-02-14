@@ -1,6 +1,7 @@
 ---
 title: "Excerpt from Pro Git"
 date: "2020-05-22"
+featuredImage: "../../images/blog_images/django.jpg"
 ---
 
 ## What is Git?

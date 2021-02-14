@@ -1,6 +1,7 @@
 ---
 title: "Unit Testing with JUnit"
 date: "2020-05-22"
+featuredImage: "../../images/blog_images/django.jpg"
 ---
 
 ## Include JUnit package with Maven:
