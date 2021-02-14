@@ -25,8 +25,8 @@ const Blog = ({ data }) => {
         </div>):
         (<div key={node.id} className={BlogStyle.blogContainer}>
           <Link to={node.fields.slug} className={BlogStyle.blogLinks}>
-            <div style={{ display: "flex" }}>
-              <div style={{ width: `200px`, height: `100%` }}>
+            <div className={BlogStyle.blogListContainer}>
+              <div className={BlogStyle.blogListImage}>
                 <Img fixed={node.frontmatter.featuredImage.childImageSharp.fixed} />
               </div>
               <div>
