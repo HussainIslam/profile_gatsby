@@ -1,7 +1,7 @@
 ---
 title: "Gatsby - Crash Course"
 date: "2020-05-06"
-featuredImage: "../../images/blog_images/django.jpg"
+featuredImage: "../../images/blog_images/gatsby.png"
 ---
 
 # Intro - Gatsby
