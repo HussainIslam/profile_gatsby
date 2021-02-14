@@ -11,7 +11,7 @@ const Blog = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
     {data.allMarkdownRemark.edges.map(( {node}, index ) => 
-      ( index === 0?
+      (index === 0?
         (<div key={node.id} className={BlogStyle.highlight}>
           <Link to={node.fields.slug} className={BlogStyle.blogLinks}>
             <h5>Latest Blog</h5>
