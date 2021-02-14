@@ -4,10 +4,12 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Img from 'gatsby-image'
 
 import BlogStyle from "./page-css/blog.module.css"
 
 const Blog = ({ data }) => {
+
   return(
   <Layout>
     <SEO title="Blog" />
@@ -16,7 +18,7 @@ const Blog = ({ data }) => {
         (<div key={node.id} className={BlogStyle.highlight}>
           <Link to={node.fields.slug} className={BlogStyle.blogLinks}>
             <h5>Latest Blog</h5>
-            <hr/>
+            <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} />
             <h3>{node.frontmatter.title}</h3>
             <p>{node.excerpt}</p>
           </Link>
@@ -45,6 +47,13 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            featuredImage{
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug
