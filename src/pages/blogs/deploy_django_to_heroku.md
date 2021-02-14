@@ -1,6 +1,7 @@
 ---
 title: "Deploy Django Project to Heroku"
 date: "2020-07-11"
+featuredImage: "../../images/blog_images/django.jpg"
 ---
 
 ## 1. Update the Pipfile.lock file

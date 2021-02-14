@@ -7,7 +7,8 @@ import SEO from "../components/seo"
 
 import BlogStyle from "./page-css/blog.module.css"
 
-const Blog = ({ data }) => (
+const Blog = ({ data }) => {
+  return(
   <Layout>
     <SEO title="Blog" />
     {data.allMarkdownRemark.edges.map(( {node}, index ) => 
@@ -32,7 +33,7 @@ const Blog = ({ data }) => (
       )
     )}
   </Layout>
-)
+)}
 
 export const query = graphql`
   query {

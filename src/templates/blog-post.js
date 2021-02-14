@@ -4,11 +4,14 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Up from "../images/up.svg"
 import Left from "../images/left.svg"
+import Img from 'gatsby-image'
 
 import BP from "./blog-post.module.css"
 
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
+  const featuredImageFluid = post.frontmatter.featuredImage.childImageSharp.fluid
+
   return (
     <Layout>
       <div className={BP.mainContainer} id="blog-heading">
@@ -36,6 +39,7 @@ export default function BlogPost({ data }) {
           Word Count: {post.wordCount.words}
         </h2>
         <hr />
+        <Img fluid={featuredImageFluid} />
         <div
           dangerouslySetInnerHTML={{ __html: post.html }}
           className={BP.blogBody}
@@ -63,6 +67,13 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD MMM Y")
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       tableOfContents
     }
