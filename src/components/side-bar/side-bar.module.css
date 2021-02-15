@@ -1,0 +1,10 @@
+.sidebar{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 40px;
+    height: 260px;
+    padding: 5px;
+    position: fixed;
+    top: 30vh;
+}
