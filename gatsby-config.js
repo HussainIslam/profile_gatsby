@@ -3,6 +3,7 @@ module.exports = {
     title: `I am Hussain`,
     description: `I am software developer. I have developed for different platforms including desktop, web, and mobile`,
     author: `@hussain`,
+    siteUrl: `https://iamhussain.ca/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -103,5 +104,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-feed`
   ],
 }
