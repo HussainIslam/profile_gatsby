@@ -1,32 +1,32 @@
 .main-container {
-  /* background-color: #4a8b50; */
   display: flex;
   align-items: center;
   color: white;
-  height: 70px;
+  height: 100px;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 .internal-container{
-  width: 70%;
+  width: 50%;
   display: flex;
   justify-content: center;
+  align-items: baseline;
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
+  border-top: 1px solid #4a8b50;
+  padding-top: 20px;
 }
 
 .social-media{
   display: flex;
-  align-items: center;
-  width: 30%;
-  height: 100%;
+  align-items: baseline;
+  width: 50%;
 }
+
 .only-links-container {
   width: 50%;
-  height: 100%;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 }
 
