@@ -14,3 +14,21 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media screen and (max-width: 800px) {
+  .highlight{
+    margin: 20px 0;
+  }
+  .title{
+    font-size: 1rem;
+
+  }
+
+  .highlight-image{
+    
+  }
+
+  .excerpt{
+    font-size: 0.6rem;
+  }
+}
