@@ -28,3 +28,16 @@ body {
   padding-left: 2.8em;
   padding-top: 0;
 }
+
+.body-container{
+  margin: 100px auto;
+  width: 50vw;
+  padding: 0 1.0875rem 1.45rem,
+}
+
+@media screen and (max-width: 800px) {
+  .body-container{
+    width: 90vw;
+    margin: 20px auto;
+  }
+}

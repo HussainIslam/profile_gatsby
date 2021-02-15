@@ -4,20 +4,14 @@ import NavBar from "./navbar/navbar"
 import BottomBar from "./bottombar/bottombar"
 import SideBar from '../components/side-bar/side-bar'
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./layout.css"
+import Style from "./layout.module.css"
 
 const Layout = ({ children }) => {
   return (
     <>
       <NavBar />
       <SideBar />
-      <div
-        style={{
-          margin: `100px auto`,
-          width: `50vw`,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className={Style.bodyContainer} >
         <main>{children}</main>
       </div>
       <BottomBar />
