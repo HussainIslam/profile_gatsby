@@ -33,10 +33,16 @@
 
 @media screen and (max-width: 800px) {
   .main-container {
-    width: 95%;
+    width: 100%;
+  }
+
+  .my-name-topic{
+    margin: 10px auto;
   }
 
   .my-name {
-    font-size: 22vw;
+    font-size: 4rem;
   }
+
+
 }
