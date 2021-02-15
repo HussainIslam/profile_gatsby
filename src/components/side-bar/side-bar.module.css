@@ -8,3 +8,9 @@
     position: fixed;
     top: 30vh;
 }
+
+@media screen and (max-width: 800px) {
+    .sidebar{
+        display: none;
+    }
+}
