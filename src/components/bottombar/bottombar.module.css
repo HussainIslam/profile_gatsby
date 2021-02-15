@@ -3,41 +3,45 @@
   display: flex;
   align-items: center;
   color: white;
-  height: 180px;
+  height: 70px;
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.brand {
-  flex-grow: 1;
-  text-align: center;
+.internal-container{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+.only-links-container {
+  width: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3em;
-}
-
-.social-media,
-.links-main-container,
-.only-links-container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
 
 .social-media {
   height: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 4% 0;
 }
 
-.icon-set span,
 .link {
   text-decoration: none;
   color: white;
+  margin: 10px 25px;
 }
 
-.icon-set:hover,
 .link:hover {
   text-decoration: none;
   color: yellowgreen;
@@ -49,16 +53,6 @@
   font-size: large;
 }
 
-.icon-set {
-  display: flex;
-  align-items: center;
-}
-
-.icon-set img {
-  width: 25px;
-  margin: 5px;
-  border-radius: 5px;
-}
 
 @media screen and (max-width: 800px) {
   .brand {
@@ -76,19 +70,10 @@
     width: 30%;
   }
 
-  .icon-set img {
-    width: 25px;
-    height: 25px;
-    border-radius: 3px;
-  }
   .button-title {
     display: none;
   }
 
-  /* 
-  .icon-set a {
-  }
- */
   .only-links-container {
     text-align: center;
   }
