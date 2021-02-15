@@ -9,14 +9,14 @@ const BlogListItem = ({ node }) => {
             <Link to={node.fields.slug} className={BlogStyle.blogLinks}>
                 <div className={BlogStyle.blogListContainer}>
                 <div className={BlogStyle.blogListImage}>
-                    <Img fixed={node.frontmatter.featuredImage.childImageSharp.fixed} className={BlogStyle.image}/>
+                    <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} className={BlogStyle.image}/>
                 </div>
-                <div>
+                <div className={BlogStyle.infoContainer}>
                     <h3 className={BlogStyle.blogTitle}>{node.frontmatter.title}</h3>{" "}
                     <h4 className={BlogStyle.blogPostDate}>
                     Posted: {node.frontmatter.date}
                     </h4>
-                    <p>{node.excerpt}</p>
+                    <p className={BlogStyle.blogExcerpt}>{node.excerpt}</p>
                 </div>
                 </div>
             </Link>
