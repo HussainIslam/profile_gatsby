@@ -56,34 +56,28 @@
 
 
 @media screen and (max-width: 800px) {
-  .brand {
-    position: absolute;
-    width: 40%;
-    margin-top: -40px;
-    margin-left: 3px;
-    font-size: 1em;
-    font-weight: bold;
+  .main-container{
+    margin-top: 30px;
+  }
+  
+  .internal-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
-  .social-media {
-    flex-direction: row;
-    height: fit-content;
-    width: 30%;
+  .social-media{
+    width: 100vw;
+    margin: 15px auto;
   }
 
-  .button-title {
-    display: none;
+  .link{
+    font-size: .8rem;
+    padding-top: 10px;
   }
-
-  .only-links-container {
-    text-align: center;
-  }
-
-  .link {
-    font-size: 0.8em;
-  }
-
-  .header {
-    display: none;
-  }
+  
+  
 }
