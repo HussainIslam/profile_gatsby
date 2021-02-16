@@ -106,6 +106,35 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-feed`,
     `gatsby-plugin-sitemap`,
-    'gatsby-plugin-robots-txt'
+    'gatsby-plugin-robots-txt',
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.GOOGLE_TAGMANAGER_ID,
+        includeInDevelopment: false,
+        defaultDataLayer: function () {
+          return {
+            pageType: window.pageType,
+          },
+        }
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+      },
+    },
   ],
 }
