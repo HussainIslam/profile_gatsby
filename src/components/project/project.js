@@ -1,6 +1,9 @@
+import React from 'react'
+import Button from '../button/button'
+
+
 import Style from './project.module.css'
 
-import React from 'react'
 
 const Project = ({item, index}) => {
     return (
@@ -15,8 +18,8 @@ const Project = ({item, index}) => {
             </div>
             <p className={Style.itemDescription}>{item.description}</p>
             <div className={Style.infoContainer}>
-                <a href={item.github} target="_blank" rel="noopener noreferrer">Github</a>
-                <a href={item.live} target="_blank" rel="noopener noreferrer">Live</a>
+                <Button name='GitHub' filled={false} link={item.github} />
+                <Button name='Demo' filled={false} link={item.live} />
             </div>
         </div>
     )

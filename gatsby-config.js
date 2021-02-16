@@ -115,9 +115,9 @@ module.exports = {
         defaultDataLayer: function () {
           return {
             pageType: window.pageType,
-          },
+          }
         }
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,

@@ -19,7 +19,7 @@
 }
 
 .info-container a{
-  display: inline-block;
+  /* display: inline-block;
   border: 1px solid green;
   padding: 10px 20px;
   width: 100px;
@@ -27,7 +27,7 @@
   box-sizing: border-box;
   margin: 0 5px;
   text-decoration: none;
-  color: green;
+  color: green; */
 }
 
 .info-container a:hover{

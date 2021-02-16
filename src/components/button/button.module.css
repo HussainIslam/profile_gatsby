@@ -1,0 +1,40 @@
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 5px;
+    text-decoration: none;
+    
+}
+
+
+.filled{
+    composes: button;
+    background-color: green;
+    color: white;
+}
+
+.filled:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+
+.hollow{
+    composes: button;
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+.hollow:hover{
+    box-sizing: border-box;
+    background-color: green;
+    color: white;
+}
+
+.button:hover{
+    text-decoration: none;
+}
+
