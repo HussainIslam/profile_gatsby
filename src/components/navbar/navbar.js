@@ -1,6 +1,5 @@
 import React from "react"
 import NavButton from '../navbutton/navbutton'
-import {FaTimesCircle, FaBars} from 'react-icons/fa'
 
 import navbarStyles from "./navbar.module.css"
 
