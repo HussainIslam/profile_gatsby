@@ -40,7 +40,7 @@ const About = () => {
                 whether it is a web or console application cannot be compared with anything else.
             </p>
             <p>
-                Download my resume from here:
+                Download my résumé from here:
             </p>
             <div className={Style.downloadButton}>
                 <Button 

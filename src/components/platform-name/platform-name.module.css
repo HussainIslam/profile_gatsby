@@ -9,6 +9,13 @@
   padding: 0;
 }
 
+.my-name-topic{
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto 10px auto;
+}
+
 .my-name {
   font-size: 7em;
   background-color: #4a8b50;
@@ -18,11 +25,6 @@
   text-align: center;
   flex-basis: 50%;
   flex-grow: 1;
-}
-
-.my-name-topic {
-  margin-top: 50px;
-  margin-bottom: 30px;
 }
 
 .sub-heading{
@@ -44,5 +46,15 @@
     font-size: 4rem;
   }
 
+  .sub-heading{
+    font-size: 1rem;
+  }
+
+  .my-name-topic{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
 
 }
