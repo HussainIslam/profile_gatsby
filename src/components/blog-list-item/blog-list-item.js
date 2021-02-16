@@ -9,7 +9,7 @@ const BlogListItem = ({ node }) => {
             <Link to={node.fields.slug} className={BlogStyle.blogLinks}>
                 <div className={BlogStyle.blogListContainer}>
                 <div className={BlogStyle.blogListImage}>
-                    <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} className={BlogStyle.image}/>
+                    <Img fluid={node.frontmatter.featuredImage.childImageSharp.fluid} className={BlogStyle.image} imgStyle={{ objectFit: "cover" }}/>
                 </div>
                 <div className={BlogStyle.infoContainer}>
                     <h3 className={BlogStyle.blogTitle}>{node.frontmatter.title}</h3>{" "}
