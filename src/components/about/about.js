@@ -1,8 +1,22 @@
 import React from 'react'
+import { useStaticQuery, graphql } from "gatsby"
+import Button from '../button/button'
 
 import Style from './about.module.css'
 
 const About = () => {
+    const { resume } = useStaticQuery(
+        graphql`
+        query MyQuery {
+            resume:file(name: {eq: "md_hussainul_islam_sajib"}, extension: {eq: "pdf"}) {
+              name
+              publicURL
+              extension
+            }
+          }
+        `
+    )
+
     return (
         <div className={Style.writeContainer}>
             <p>
@@ -25,6 +39,18 @@ const About = () => {
                 passion and love but enjoy every moment of it. They excitement that I get from building something,
                 whether it is a web or console application cannot be compared with anything else.
             </p>
+            <p>
+                Download my resume from here:
+            </p>
+            <div className={Style.downloadButton}>
+                <Button 
+                    name='Résumé' 
+                    filled={false} 
+                    link={ resume.publicURL } 
+                    download={`${resume.name}.${resume.extension}`} 
+                />
+
+            </div>
         </div>
     )
 }

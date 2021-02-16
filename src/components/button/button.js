@@ -1,7 +1,7 @@
 import Style from './button.module.css'
 import React from 'react'
 
-const Button = ({ name, filled, link }) => {
+const Button = ({ name, filled, link, download }) => {
     return (
         <>
             <a 
@@ -9,6 +9,7 @@ const Button = ({ name, filled, link }) => {
                 href={link} 
                 target="_blank" 
                 rel="noopener noreferrer"
+                download={ download ? download : null }
             >
                 {name}
             </a>
