@@ -14,7 +14,7 @@ const Blog = ({ data }) => {
     <SEO title="Blog" />
     {data.allMarkdownRemark.edges.map(( {node}, index ) => 
       (index === 0?
-        <LatestBlog node={node} />: <BlogListItem node={node}/>
+        <LatestBlog node={node} />: <BlogListItem key={index} node={node}/>
       )
     )}
   </Layout>
