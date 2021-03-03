@@ -72,11 +72,11 @@ useEffect(async ()=>{
 Implementation of `useEffect` with a function as effect function:
 ```js
 useEffect(async ()=>{
-	function doSomething() {
+	async function doSomething() {
 		const response = await axios.get(`https://reqres.in/api/users`)
 		setUsers(response.data)
 	}
-	doSomething()
+	await doSomething()
 	return ()=>{ console.log("Cleaning up the mess!")}//do something else
 },[users])
 ```
@@ -88,8 +88,8 @@ const doSomething = useCallback(async () =>{
 	setUsers(response.data)
 }, [])
 
-useEffect(()=>{
-	doSomething();
+useEffect(async ()=>{
+	await doSomething();
 },[doSomething])
 
 ```
