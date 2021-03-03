@@ -71,7 +71,7 @@ useEffect(async ()=>{
 
 Implementation of `useEffect` with a function as effect function:
 ```js
-useEffect(()=>{
+useEffect(async ()=>{
 	function doSomething() {
 		const response = await axios.get(`https://reqres.in/api/users`)
 		setUsers(response.data)
@@ -83,7 +83,7 @@ useEffect(()=>{
 
 Implementation of `useEffect` with functions, if the function is outside the `useEffect`:
 ```js
-const doSomething = useCallback(() =>{
+const doSomething = useCallback(async () =>{
 	const response = await axios.get(`https://reqres.in/api/users`)
 	setUsers(response.data)
 }, [])
