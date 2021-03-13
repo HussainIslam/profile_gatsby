@@ -54,43 +54,53 @@ Implementation of `useEffect` without any cleanup but with list of dependency wo
 ```js
 const [ users, setUsers ] = useState([])
 
-useEffect(async ()=>{
-	const response = await axios.get(`https://reqres.in/api/users`)
-	setUsers(response.data)
-},[])
+useEffect(()=>{
+	(async ()=>{
+		const response = await axios.get(`https://reqres.in/api/users`)
+		setUsers(response.data)
+	})}()
+,[])
 ```
 
 Implementation of `useEffect` with cleanup and dependency list would look like:
 ```js
-useEffect(async ()=>{
-	const response = await axios.get(`https://reqres.in/api/users`)
-	setUsers(response.data)
-	return ()=>{ console.log("Cleaning up the mess!")}//do something else
-},[users])
+useEffect(()=>{
+	(async ()=>{
+		const response = await axios.get(`https://reqres.in/api/users`)
+		setUsers(response.data)
+		return ()=>{ console.log("Cleaning up the mess!")}//do something else
+	})}()
+,[users])
 ```
 
 Implementation of `useEffect` with a function as effect function:
 ```js
-useEffect(async ()=>{
-	async function doSomething() {
-		const response = await axios.get(`https://reqres.in/api/users`)
-		setUsers(response.data)
-	}
-	await doSomething()
-	return ()=>{ console.log("Cleaning up the mess!")}//do something else
-},[users])
+useEffect(()=>{
+		(async ()=>{
+		async function doSomething() {
+			const response = await axios.get(`https://reqres.in/api/users`)
+			setUsers(response.data)
+		}
+		await doSomething()
+		return ()=>{ console.log("Cleaning up the mess!")}//do something else
+	})}()
+,[users])
 ```
 
 Implementation of `useEffect` with functions, if the function is outside the `useEffect`:
 ```js
-const doSomething = useCallback(async () =>{
-	const response = await axios.get(`https://reqres.in/api/users`)
-	setUsers(response.data)
-}, [])
+const doSomething = useCallback(() => {
+	(async () =>{
+		const response = await axios.get(`https://reqres.in/api/users`)
+		setUsers(response.data)
+	})}()
+, [])
 
-useEffect(async ()=>{
-	await doSomething();
-},[doSomething])
+useEffect(() => {
+	(async ()=>{
+		await doSomething();
+	})}()
+,[doSomething])
 
 ```
 
