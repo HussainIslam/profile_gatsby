@@ -89,11 +89,10 @@ useEffect(()=>{
 
 Implementation of `useEffect` with functions, if the function is outside the `useEffect`:
 ```js
-const doSomething = useCallback(() => {
-	(async () =>{
+const doSomething = useCallback(async () =>{
 		const response = await axios.get(`https://reqres.in/api/users`)
 		setUsers(response.data)
-	})}()
+	}
 , [])
 
 useEffect(() => {
